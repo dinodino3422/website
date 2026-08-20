@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Marks the document as scripted before first paint, so the entrance
+       animations can start hidden. Without JS the class never lands and every
+       element is simply visible, which is the whole point of doing it here. -->
+  <script>document.documentElement.className+=" js";</script>
+  <title>Generator kW &amp; kVAr Load Sharing | Diagnostic Guide</title>
+  <meta name="description" content="A practical guide to diagnosing unequal load sharing between paralleled marine generators: governor, droop, AVR, cross-current compensation and circulating currents.">
+  <link rel="canonical" href="https://www.gmmarineautomation.gr/en/insights/kw-kvar-load-sharing.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="GM Marine Automation &amp; Electrical System">
+  <meta name="geo.region" content="GR-A1">
+  <meta name="geo.placename" content="Moschato">
+  <link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/kw-kvar-load-sharing.html">
+  <link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/kw-kvar-load-sharing.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/kw-kvar-load-sharing.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="GM Marine Automation">
+  <meta property="og:title" content="Generator kW &amp; kVAr Load Sharing | Diagnostic Guide">
+  <meta property="og:description" content="A practical guide to diagnosing unequal load sharing between paralleled marine generators: governor, droop, AVR, cross-current compensation and circulating currents.">
+  <meta property="og:url" content="https://www.gmmarineautomation.gr/en/insights/kw-kvar-load-sharing.html">
+  <meta property="og:image" content="https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GM Marine Automation — marine electrical &amp; automation systems">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Generator kW &amp; kVAr Load Sharing | Diagnostic Guide">
+  <meta name="twitter:description" content="A practical guide to diagnosing unequal load sharing between paralleled marine generators: governor, droop, AVR, cross-current compensation and circulating currents.">
+  <meta name="twitter:image" content="https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg">
+
+  <meta name="theme-color" content="#0a1a26">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="../../assets/css/site.css">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["Organization","ProfessionalService","LocalBusiness"],"@id":"https://www.gmmarineautomation.gr/#organization","name":"GM Marine Automation & Electrical System","alternateName":"GM Marine Automation","slogan":"Marine Power, Automation & Control Solutions","url":"https://www.gmmarineautomation.gr/","logo":{"@type":"ImageObject","url":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg"},"image":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg","description":"Marine electrical and automation systems for ships and yachts: generators, power management, DEIF, synchronizing, alarm monitoring, switchboards, PLC/SCADA, retrofit and onboard troubleshooting.","foundingDate":"2022","email":"gianment@hotmail.com","telephone":"+306989919782","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"26 Kanari Street","addressLocality":"Moschato","addressRegion":"Attica","addressCountry":"GR"},"areaServed":[{"@type":"Country","name":"Greece"},{"@type":"Place","name":"Piraeus"},{"@type":"Place","name":"Perama"},{"@type":"Place","name":"Elefsina"},{"@type":"Place","name":"Worldwide marine service"}],"knowsAbout":["Marine electrical systems","Marine automation","Power management systems","Generator synchronizing","Load sharing","DEIF generator controllers","Alarm monitoring systems","Marine switchboards","PLC HMI SCADA","Marine troubleshooting","Commissioning and sea trials","Modbus","CAN bus"],"knowsLanguage":["el","en"],"founder":{"@type":"Person","name":"Giannis Meintiai","jobTitle":"Founder & Technical Director"},"contactPoint":[{"@type":"ContactPoint","contactType":"technical support","telephone":"+306989919782","email":"gianment@hotmail.com","availableLanguage":["el","en"],"areaServed":"Worldwide"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.gmmarineautomation.gr/#website-en","url":"https://www.gmmarineautomation.gr/en/","name":"GM Marine Automation","inLanguage":"en","publisher":{"@id":"https://www.gmmarineautomation.gr/#organization"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.gmmarineautomation.gr/en/"},{"@type":"ListItem","position":2,"name":"Technical Insights","item":"https://www.gmmarineautomation.gr/en/insights.html"},{"@type":"ListItem","position":3,"name":"kW and kVAr load sharing: why generators do not share correctly","item":"https://www.gmmarineautomation.gr/en/insights/kw-kvar-load-sharing.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"kW and kVAr load sharing: why generators do not share correctly","description":"A practical guide to diagnosing unequal load sharing between paralleled marine generators: governor, droop, AVR, cross-current compensation and circulating currents.","inLanguage":"en","datePublished":"2026-08-16","dateModified":"2026-08-16","author":{"@id":"https://www.gmmarineautomation.gr/#organization"},"publisher":{"@id":"https://www.gmmarineautomation.gr/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.gmmarineautomation.gr/en/insights/kw-kvar-load-sharing.html"},"image":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg","about":{"@type":"Thing","name":"Generator Synchronizing & Load Sharing"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <p class="topbar__alert"><span class="pulse" aria-hidden="true"></span>24/7 Emergency Technical Support</p>
+    <div class="topbar__links">
+      <a href="tel:+306989919782">+30 698 991 9782</a>
+      <a href="mailto:gianment@hotmail.com">gianment@hotmail.com</a>
+      <a class="topbar__lang" href="../../arthra/kw-kvar-load-sharing.html" hreflang="el" lang="el"
+         aria-label="Language: Ελληνικά">Ελληνικά</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="../../en/index.html">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 20c0-4 2.2-6 5-6s5 2 5 6 2.2 6 5 6 5-2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="brand__text">
+        <span class="brand__name">GM <b>Marine Automation</b></span>
+        <span class="brand__tag">&amp; Electrical System</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="primary-nav" aria-label="Open menu">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Main navigation">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="../../en/index.html">Home</a></li>
+        <li><a class="nav__link" href="../../en/services.html">Services</a></li>
+        <li><a class="nav__link" href="../../en/projects.html">Projects</a></li>
+        <li><a class="nav__link" href="../../en/insights.html" aria-current="page">Technical Insights</a></li>
+        <li><a class="nav__link" href="../../en/company.html">Company</a></li>
+        <li><a class="nav__link" href="../../en/contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn--accent nav__cta" href="../../en/contact.html">Request a quote</a>
+    </nav>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Breadcrumb"><div class="wrap"><ol><li><a href="../../en/index.html">Home</a></li><li><a href="../../en/insights.html">Technical Insights</a></li><li><span aria-current="page">kW and kVAr load sharing: why generators do not share correctly</span></li></ol></div></nav>
+  <main id="main">
+<section class="page-head page-head--article">
+  <div class="wrap">
+    <p class="article__meta">
+      <time datetime="2026-08-16">2026-08-16</time>
+      <span>8 min read</span>
+    </p>
+    <h1>kW and kVAr load sharing: why generators do not share correctly</h1>
+    <p class="page-head__lead">Active and reactive load are shared by two entirely different systems. Confuse them during diagnosis and you will adjust the wrong machine.</p>
+  </div>
+</section>
+<section class="section section--article"><div class="wrap layout">
+      <article class="layout__main prose">
+      <p>The most common misconception in the engine room is that &#x27;load sharing&#x27; is one thing. It is not. Active load, kW, is shared by the governors. Reactive load, kVAr, is shared by the AVRs. Two independent systems, two independent failure modes, two different fixes.</p>
+      <p>Before touching anything, one measurement is required: kW and kVAr per generator, simultaneously, at no fewer than three load points. Without it, everything else is guesswork.</p>
+      <h2>Case A — unequal kW sharing</h2>
+      <p>If the machines show correct, balanced kVAr but unbalanced kW, the problem is on the engine and governor side.</p>
+      <ul class="list">
+      <li>Different droop settings between machines. In droop, two generators share proportionally only if their droop percentage matches. 3% against 5% gives permanent imbalance.</li>
+      <li>One machine in isochronous and one in droop. The isochronous machine absorbs every load change until it reaches its limit.</li>
+      <li>A speed-setpoint offset. A few hundredths of a Hz translate into tens of kW.</li>
+      <li>A worn mechanical governor or an actuator with hysteresis — the command arrives, the engine does not follow it.</li>
+      <li>A genuine power limitation on one machine: fuel supply, turbocharger, exhaust temperature. Here the governor is doing its job correctly and the problem is mechanical.</li>
+    </ul>
+      <aside class="pull"><p>Before blaming the setup, check whether the &#x27;lazy&#x27; machine can reach that load on its own. If it cannot, this is not a load-sharing problem.</p></aside>
+      <h2>Case B — unequal kVAr and circulating currents</h2>
+      <p>If kW shares correctly but one machine runs strongly lagging while the other runs leading, there is a circulating current between them. Both heat up, and neither produces useful power for it.</p>
+      <ul class="list">
+      <li>Cross-current compensation disabled or wrongly connected. This is the most common cause.</li>
+      <li>Wrong polarity or wrong phase on the AVR paralleling CT — the system corrects in the wrong direction.</li>
+      <li>Different voltage setpoints between the AVRs. The machine with the higher setpoint takes the reactive load.</li>
+      <li>An AVR of a different type or generation fitted as a replacement, with settings never aligned.</li>
+      <li>One AVR left in manual excitation mode without anyone knowing.</li>
+    </ul>
+      <h2>Case C — sharing that changes with load</h2>
+      <p>When sharing is correct at low load and degrades at high load — or the reverse — this is not an offset error but a slope error. Check:</p>
+      <ol class="list list--num">
+      <li>The droop percentage of each machine, measured rather than read off a plate.</li>
+      <li>The calibration of the power-measurement CTs. A CT with the wrong ratio reads correctly at one point and wrongly everywhere else.</li>
+      <li>Actuator linearity across the full travel.</li>
+      <li>Load-sharer gain and stability settings — too much gain gives oscillation, too little gives permanent offset.</li>
+    </ol>
+      <h2>What &#x27;correct&#x27; means in practice</h2>
+      <p>For generators of equal rating, a deviation of about ±5% of rated load is accepted on most systems; the exact requirement follows from the manufacturer&#x27;s specification and the vessel&#x27;s class rules. For generators of different rating the target is not equal kW but equal percentage loading — and that is a setting, not something that happens by itself.</p>
+      <p>In every case the adjustment closes with a test: stepped loading, recorded results, and a load rejection to confirm that no machine goes into reverse power during the transient.</p>
+      </article>
+      <aside class="aside">
+        <div class="aside__card aside__card--plain">
+          <h2 class="aside__h">Related services</h2>
+          <ul class="aside__list">
+            <li><a href="../../en/services/generator-synchronizing-load-sharing.html">Generator Synchronizing &amp; Load Sharing</a></li>
+          </ul>
+        </div>
+        <div class="aside__card">
+          <h2 class="aside__h">Need an engineer onboard?</h2>
+          <p>Send us the fault, the vessel type and the equipment involved. You get a concrete intervention plan back — not a generic quote.</p>
+          <a class="btn btn--accent btn--full" href="../../en/contact.html">Request a quote</a>
+        </div>
+      </aside>
+    </div></section>
+<section class="section section--alt">
+  <div class="wrap">
+<div class="sec-head ">
+    <h2>More articles</h2>
+    </div>
+    <div class="grid grid--3">
+      <a class="card card--article" href="../../en/insights/blackout-recovery-pms.html">
+        <span class="card__meta"><time datetime="2026-08-19">2026-08-19</time><span>7 min read</span></span>
+        <span class="card__title">Engine-room blackout: why the PMS did not save the vessel</span>
+        <span class="card__text">A blackout is rarely caused by a failure. Usually it is caused by three parameters nobody has looked at since commissioning.</span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--article" href="../../en/insights/generator-controller-commissioning-mistakes.html">
+        <span class="card__meta"><time datetime="2026-08-12">2026-08-12</time><span>7 min read</span></span>
+        <span class="card__title">Seven mistakes in generator controller configuration</span>
+        <span class="card__text">Most of them never show in normal operation. They show the first time something goes wrong — which is exactly when they must not.</span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--article" href="../../en/insights/alarm-monitoring-false-alarms.html">
+        <span class="card__meta"><time datetime="2026-08-08">2026-08-08</time><span>6 min read</span></span>
+        <span class="card__title">From forty standing alarms to a monitoring system you can trust</span>
+        <span class="card__text">A system with forty standing alarms monitors nothing. It has trained the crew to acknowledge without reading.</span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="band band--cta">
+  <div class="wrap band__inner">
+    <div>
+      <h2>Send us the problem</h2>
+      <p>Describe the system, the vessel and what you are seeing. You get back a concrete intervention plan and a defined scope of work.</p>
+    </div>
+    <div class="band__actions">
+      <a class="btn btn--accent btn--lg" href="../../en/contact.html">Request a technical quote</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+306989919782">Call us +30 698 991 9782</a>
+    </div>
+  </div>
+</section>
+  </main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="../../en/index.html">
+          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 20c0-4 2.2-6 5-6s5 2 5 6 2.2 6 5 6 5-2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="brand__text">
+            <span class="brand__name">GM <b>Marine Automation</b></span>
+            <span class="brand__tag">&amp; Electrical System</span>
+          </span>
+        </a>
+        <p class="footer__blurb">Marine Power, Automation &amp; Control Solutions</p>
+        <dl class="footer__meta">
+          <dt>Areas served</dt><dd>Greece &amp; worldwide marine service</dd>
+          <dt>Office hours</dt><dd>Monday – Friday 08:00 – 18:00<br>Saturday: By arrangement</dd>
+        </dl>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Services</h2>
+        <ul class="footer__list">
+        <li><a href="../../en/services/marine-automation-control-systems.html">Automation &amp; Control</a></li>
+        <li><a href="../../en/services/deif-power-management.html">DEIF Systems</a></li>
+        <li><a href="../../en/services/power-management-systems.html">Power Management (PMS)</a></li>
+        <li><a href="../../en/services/generator-synchronizing-load-sharing.html">Synchronizing &amp; Load Sharing</a></li>
+        <li><a href="../../en/services/alarm-monitoring-systems.html">Alarm Monitoring (AMS)</a></li>
+        <li><a href="../../en/services/troubleshooting-repairs.html">Troubleshooting &amp; Repairs</a></li>
+        </ul>
+        <p class="footer__more"><a href="../../en/services.html">All services &rarr;</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Company</h2>
+        <ul class="footer__list">
+        <li><a href="../../en/services.html">Services</a></li>
+        <li><a href="../../en/projects.html">Projects</a></li>
+        <li><a href="../../en/insights.html">Technical Insights</a></li>
+        <li><a href="../../en/company.html">Company</a></li>
+        <li><a href="../../en/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Contact</h2>
+        <ul class="footer__list footer__list--contact">
+          <li><a href="tel:+306989919782">+30 698 991 9782</a></li>
+          <li><a href="mailto:gianment@hotmail.com">gianment@hotmail.com</a></li>
+          <li><a href="https://wa.me/306989919782" rel="noopener">WhatsApp / Viber</a></li>
+          <li class="footer__addr">26 Kanari Street<br>Moschato, Greece</li>
+        </ul>
+        <p class="footer__emergency">24/7 Emergency Technical Support</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&#169; <span data-year>2026</span> GM Marine Automation &amp; Electrical System. All rights reserved.</p>
+      <p>Design &amp; development: <a href="https://braingroup.tech" rel="noopener">BRAIN GROUP</a></p>
+    </div>
+  </div>
+</footer>
+<a class="fab-whatsapp" href="https://wa.me/306989919782" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.71 2.61 4.14 3.66.58.251.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31Z"/></svg></a>
+  <script src="../../assets/js/site.js" defer></script>
+</body>
+</html>

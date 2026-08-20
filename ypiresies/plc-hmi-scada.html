@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Marks the document as scripted before first paint, so the entrance
+       animations can start hidden. Without JS the class never lands and every
+       element is simply visible, which is the whole point of doing it here. -->
+  <script>document.documentElement.className+=" js";</script>
+  <title>PLC, HMI &amp; SCADA Πλοίων | Προγραμματισμός &amp; Commissioning</title>
+  <meta name="description" content="Προγραμματισμός και commissioning συστημάτων PLC, HMI και SCADA για παρακολούθηση και αυτοματισμό μηχανολογικού και ηλεκτρολογικού εξοπλισμού πλοίου.">
+  <link rel="canonical" href="https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="GM Marine Automation &amp; Electrical System">
+  <meta name="geo.region" content="GR-A1">
+  <meta name="geo.placename" content="Moschato">
+  <link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html">
+  <link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/plc-hmi-scada.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:site_name" content="GM Marine Automation">
+  <meta property="og:title" content="PLC, HMI &amp; SCADA Πλοίων | Προγραμματισμός &amp; Commissioning">
+  <meta property="og:description" content="Προγραμματισμός και commissioning συστημάτων PLC, HMI και SCADA για παρακολούθηση και αυτοματισμό μηχανολογικού και ηλεκτρολογικού εξοπλισμού πλοίου.">
+  <meta property="og:url" content="https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html">
+  <meta property="og:image" content="https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GM Marine Automation — marine electrical &amp; automation systems">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PLC, HMI &amp; SCADA Πλοίων | Προγραμματισμός &amp; Commissioning">
+  <meta name="twitter:description" content="Προγραμματισμός και commissioning συστημάτων PLC, HMI και SCADA για παρακολούθηση και αυτοματισμό μηχανολογικού και ηλεκτρολογικού εξοπλισμού πλοίου.">
+  <meta name="twitter:image" content="https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg">
+
+  <meta name="theme-color" content="#0a1a26">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["Organization","ProfessionalService","LocalBusiness"],"@id":"https://www.gmmarineautomation.gr/#organization","name":"GM Marine Automation & Electrical System","alternateName":"GM Marine Automation","slogan":"Marine Power, Automation & Control Solutions","url":"https://www.gmmarineautomation.gr/","logo":{"@type":"ImageObject","url":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg"},"image":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg","description":"Ναυτιλιακά ηλεκτρολογικά και συστήματα αυτοματισμού για πλοία και σκάφη: γεννήτριες, power management, DEIF, παραλληλισμός, alarm monitoring, switchboards, PLC/SCADA, retrofit και onboard troubleshooting.","foundingDate":"2022","email":"gianment@hotmail.com","telephone":"+306989919782","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"Κανάρη 26","addressLocality":"Μοσχάτο","addressRegion":"Αττική","addressCountry":"GR"},"areaServed":[{"@type":"Country","name":"Greece"},{"@type":"Place","name":"Piraeus"},{"@type":"Place","name":"Perama"},{"@type":"Place","name":"Elefsina"},{"@type":"Place","name":"Worldwide marine service"}],"knowsAbout":["Marine electrical systems","Marine automation","Power management systems","Generator synchronizing","Load sharing","DEIF generator controllers","Alarm monitoring systems","Marine switchboards","PLC HMI SCADA","Marine troubleshooting","Commissioning and sea trials","Modbus","CAN bus"],"knowsLanguage":["el","en"],"founder":{"@type":"Person","name":"Γιάννης Μειντιάι","jobTitle":"Founder & Technical Director"},"contactPoint":[{"@type":"ContactPoint","contactType":"technical support","telephone":"+306989919782","email":"gianment@hotmail.com","availableLanguage":["el","en"],"areaServed":"Worldwide"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.gmmarineautomation.gr/#website-el","url":"https://www.gmmarineautomation.gr/","name":"GM Marine Automation","inLanguage":"el","publisher":{"@id":"https://www.gmmarineautomation.gr/#organization"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Αρχική","item":"https://www.gmmarineautomation.gr/"},{"@type":"ListItem","position":2,"name":"Υπηρεσίες","item":"https://www.gmmarineautomation.gr/ypiresies.html"},{"@type":"ListItem","position":3,"name":"Συστήματα PLC, HMI & SCADA","item":"https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Συστήματα PLC, HMI & SCADA","description":"Προγραμματισμός και commissioning συστημάτων PLC, HMI και SCADA για παρακολούθηση και αυτοματισμό μηχανολογικού και ηλεκτρολογικού εξοπλισμού πλοίου.","serviceType":"PLC, HMI & SCADA Systems","provider":{"@id":"https://www.gmmarineautomation.gr/#organization"},"areaServed":[{"@type":"Country","name":"Greece"},{"@type":"Place","name":"Worldwide marine service"}],"url":"https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html","hasOfferCatalog":{"@type":"OfferCatalog","name":"Συστήματα PLC, HMI & SCADA","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Προγραμματισμός PLC για βοηθητικά συστήματα και μηχανήματα καταστρώματος"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Σχεδίαση οθονών HMI με σαφή ιεραρχία και ουσιαστικά διαγνωστικά"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"SCADA για κεντρική επιτήρηση μηχανοστασίου και ιστορικό δεδομένων"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Αντικατάσταση relay logic από PLC σε παλαιότερες εγκαταστάσεις"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Διασύνδεση με AMS, PMS και συστήματα τρίτων κατασκευαστών"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Data logging και trending για ανάλυση απόδοσης και προληπτική συντήρηση"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Έλεγχος I/O, loop checking και functional testing"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Τεκμηρίωση: functional description, I/O list, σχέδια, backup"}}]}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Μπορείτε να αναλάβετε σύστημα χωρίς τεκμηρίωση;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Ξεκινάμε με reverse engineering της λογικής και της καλωδίωσης. Παίρνει χρόνο, αλλά είναι η μόνη ασφαλής βάση για οποιαδήποτε αλλαγή."}},{"@type":"Question","name":"Χρειάζεται SCADA σε ένα μεσαίο πλοίο;","acceptedAnswer":{"@type":"Answer","text":"Όχι πάντα. Συχνά ένα καλά σχεδιασμένο HMI με data logging καλύπτει την ανάγκη με πολύ μικρότερο κόστος και πολυπλοκότητα."}},{"@type":"Question","name":"Τι γίνεται με την υποστήριξη μετά την παράδοση;","acceptedAnswer":{"@type":"Answer","text":"Παραδίδουμε πλήρη τεκμηρίωση και backup ώστε να μπορεί να επέμβει και τρίτος. Παραμένουμε διαθέσιμοι για υποστήριξη, χωρίς να είμαστε προϋπόθεση."}}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <p class="topbar__alert"><span class="pulse" aria-hidden="true"></span>24/7 Emergency Technical Support</p>
+    <div class="topbar__links">
+      <a href="tel:+306989919782">+30 698 991 9782</a>
+      <a href="mailto:gianment@hotmail.com">gianment@hotmail.com</a>
+      <a class="topbar__lang" href="../en/services/plc-hmi-scada.html" hreflang="en" lang="en"
+         aria-label="Γλώσσα: English">English</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="../index.html">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 20c0-4 2.2-6 5-6s5 2 5 6 2.2 6 5 6 5-2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="brand__text">
+        <span class="brand__name">GM <b>Marine Automation</b></span>
+        <span class="brand__tag">&amp; Electrical System</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="primary-nav" aria-label="Άνοιγμα μενού">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Κύρια πλοήγηση">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="../index.html">Αρχική</a></li>
+        <li><a class="nav__link" href="../ypiresies.html" aria-current="page">Υπηρεσίες</a></li>
+        <li><a class="nav__link" href="../erga.html">Έργα</a></li>
+        <li><a class="nav__link" href="../arthra.html">Τεχνικά Άρθρα</a></li>
+        <li><a class="nav__link" href="../etaireia.html">Η Εταιρεία</a></li>
+        <li><a class="nav__link" href="../epikoinonia.html">Επικοινωνία</a></li>
+      </ul>
+      <a class="btn btn--accent nav__cta" href="../epikoinonia.html">Αίτημα προσφοράς</a>
+    </nav>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Διαδρομή πλοήγησης"><div class="wrap"><ol><li><a href="../index.html">Αρχική</a></li><li><a href="../ypiresies.html">Υπηρεσίες</a></li><li><span aria-current="page">Συστήματα PLC, HMI &amp; SCADA</span></li></ol></div></nav>
+  <main id="main">
+<section class="page-head page-head--service">
+  <div class="wrap page-head__inner">
+    <div>
+      <p class="eyebrow eyebrow--accent">Υπηρεσίες</p>
+      <h1>Συστήματα PLC, HMI &amp; SCADA</h1>
+      <p class="page-head__lead">Ένα PLC σε πλοίο δεν κρίνεται από το πόσο έξυπνο είναι, αλλά από το πόσο γρήγορα καταλαβαίνει κάποιος τι κάνει όταν έχει πρόβλημα στη μέση της νύχτας και το εγχειρίδιο λείπει.</p>
+      <p class="page-head__lead">Γράφουμε λογική με σχόλια, ονομασμένες μεταβλητές και διαγνωστικά σημεία. Σχεδιάζουμε οθόνες που δείχνουν την πραγματική εγκατάσταση, όχι διακοσμητικά γραφικά. Και παραδίδουμε πάντα το πρόγραμμα.</p>
+    </div>
+    <div class="page-head__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="12" width="36" height="24" rx="2"/><path d="M15 12v24M24 12v24M33 12v24"/><path d="M9 18h3M9 22h3M18 18h3M18 22h3M27 18h3M27 22h3M36 18h3M36 22h3"/></svg></div>
+  </div>
+</section>
+<section class="section section--service"><div class="wrap layout">
+      <article class="layout__main">
+      <section class="block">
+      <h2>Τι αναλαμβάνουμε</h2>
+      <ul class="list">
+      <li>Προγραμματισμός PLC για βοηθητικά συστήματα και μηχανήματα καταστρώματος</li>
+      <li>Σχεδίαση οθονών HMI με σαφή ιεραρχία και ουσιαστικά διαγνωστικά</li>
+      <li>SCADA για κεντρική επιτήρηση μηχανοστασίου και ιστορικό δεδομένων</li>
+      <li>Αντικατάσταση relay logic από PLC σε παλαιότερες εγκαταστάσεις</li>
+      <li>Διασύνδεση με AMS, PMS και συστήματα τρίτων κατασκευαστών</li>
+      <li>Data logging και trending για ανάλυση απόδοσης και προληπτική συντήρηση</li>
+      <li>Έλεγχος I/O, loop checking και functional testing</li>
+      <li>Τεκμηρίωση: functional description, I/O list, σχέδια, backup</li>
+    </ul>
+    </section>
+      <section class="block">
+      <h2>Συνήθη συμπτώματα & βλάβες</h2>
+      <ul class="list">
+      <li>PLC χωρίς διαθέσιμο πρόγραμμα ή backup — καμία αλλαγή δεν είναι δυνατή</li>
+      <li>Οθόνες που δείχνουν μηχανήματα που δεν υπάρχουν πια</li>
+      <li>Λογική γραμμένη χωρίς σχόλια, με μεταβλητές τύπου M0.3</li>
+      <li>Σύστημα που «κολλάει» και επανέρχεται μόνο με power cycle</li>
+      <li>Καμία καταγραφή δεδομένων — κάθε ανάλυση συμβάντος ξεκινά από το μηδέν</li>
+    </ul>
+    </section>
+      <section class="block">
+      <h2>Τι παραδίδουμε</h2>
+      <ul class="list">
+      <li>Σχολιασμένο πρόγραμμα PLC και project αρχεία HMI</li>
+      <li>Λειτουργική περιγραφή και I/O list</li>
+      <li>Πρωτόκολλο loop check και functional test</li>
+      <li>Εκπαίδευση πληρώματος στη χρήση και στα διαγνωστικά</li>
+    </ul>
+    </section>
+      <section class="block">
+      <h2>Εξοπλισμός & πρωτόκολλα</h2>
+      <ul class="list">
+      <li>Siemens SIMATIC S7 και LOGO!, Schneider, Omron, Mitsubishi</li>
+      <li>Βιομηχανικά HMI και panel PC ναυτιλιακών προδιαγραφών</li>
+      <li>Πλατφόρμες SCADA με ιστορικό και alarming</li>
+      <li>Modbus RTU/TCP, Profibus, CANopen, Ethernet/IP</li>
+    </ul>
+    </section>
+      <section class="block">
+    <h2 class="faq__h">Συχνές ερωτήσεις</h2>
+    <div class="faq">
+    <details class="faq__item"><summary><span>Μπορείτε να αναλάβετε σύστημα χωρίς τεκμηρίωση;</span></summary><div class="faq__a"><p>Ναι. Ξεκινάμε με reverse engineering της λογικής και της καλωδίωσης. Παίρνει χρόνο, αλλά είναι η μόνη ασφαλής βάση για οποιαδήποτε αλλαγή.</p></div></details>
+    <details class="faq__item"><summary><span>Χρειάζεται SCADA σε ένα μεσαίο πλοίο;</span></summary><div class="faq__a"><p>Όχι πάντα. Συχνά ένα καλά σχεδιασμένο HMI με data logging καλύπτει την ανάγκη με πολύ μικρότερο κόστος και πολυπλοκότητα.</p></div></details>
+    <details class="faq__item"><summary><span>Τι γίνεται με την υποστήριξη μετά την παράδοση;</span></summary><div class="faq__a"><p>Παραδίδουμε πλήρη τεκμηρίωση και backup ώστε να μπορεί να επέμβει και τρίτος. Παραμένουμε διαθέσιμοι για υποστήριξη, χωρίς να είμαστε προϋπόθεση.</p></div></details>
+    </div>
+    </section>
+      </article>
+      <aside class="aside">
+        <div class="aside__card">
+          <h2 class="aside__h">Χρειάζεστε τεχνικό onboard;</h2>
+          <p>Στείλτε μας το πρόβλημα, τον τύπο του πλοίου και τον εξοπλισμό. Απαντάμε με συγκεκριμένο πλάνο επέμβασης — όχι με γενικόλογη προσφορά.</p>
+          <a class="btn btn--accent btn--full" href="../epikoinonia.html">Αίτημα προσφοράς</a>
+          <a class="btn btn--ghost btn--full" href="tel:+306989919782">+30 698 991 9782</a>
+          <p class="aside__note">24/7 Emergency Technical Support</p>
+        </div>
+        <div class="aside__card aside__card--plain">
+          <h2 class="aside__h">Σχετικές υπηρεσίες</h2>
+          <ul class="aside__list">
+          <li><a href="../ypiresies/marine-automation-control-systems.html">Συστήματα Αυτοματισμού &amp; Ελέγχου Πλοίων</a></li>
+          <li><a href="../ypiresies/alarm-monitoring-systems.html">Alarm Monitoring Systems (AMS)</a></li>
+          <li><a href="../ypiresies/marine-networks.html">CAN Bus, Modbus &amp; Δίκτυα Επικοινωνίας</a></li>
+          </ul>
+          <p class="aside__more"><a class="link-arrow" href="../ypiresies.html">Όλες οι υπηρεσίες &rarr;</a></p>
+        </div>
+      </aside>
+    </div></section>
+<section class="band band--cta">
+  <div class="wrap band__inner">
+    <div>
+      <h2>Στείλτε μας το πρόβλημα</h2>
+      <p>Περιγράψτε το σύστημα, το πλοίο και το τι παρατηρείτε. Απαντάμε με συγκεκριμένο πλάνο επέμβασης και σαφές εύρος εργασιών.</p>
+    </div>
+    <div class="band__actions">
+      <a class="btn btn--accent btn--lg" href="../epikoinonia.html">Ζητήστε τεχνική προσφορά</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+306989919782">Καλέστε μας +30 698 991 9782</a>
+    </div>
+  </div>
+</section>
+  </main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="../index.html">
+          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 20c0-4 2.2-6 5-6s5 2 5 6 2.2 6 5 6 5-2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="brand__text">
+            <span class="brand__name">GM <b>Marine Automation</b></span>
+            <span class="brand__tag">&amp; Electrical System</span>
+          </span>
+        </a>
+        <p class="footer__blurb">Marine Power, Automation &amp; Control Solutions</p>
+        <dl class="footer__meta">
+          <dt>Περιοχές εξυπηρέτησης</dt><dd>Ελλάδα &amp; worldwide marine service</dd>
+          <dt>Ωράριο</dt><dd>Δευτέρα – Παρασκευή 08:00 – 18:00<br>Σάββατο: Κατόπιν συνεννόησης</dd>
+        </dl>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Υπηρεσίες</h2>
+        <ul class="footer__list">
+        <li><a href="../ypiresies/marine-automation-control-systems.html">Αυτοματισμός &amp; Έλεγχος</a></li>
+        <li><a href="../ypiresies/deif-power-management.html">Συστήματα DEIF</a></li>
+        <li><a href="../ypiresies/power-management-systems.html">Power Management (PMS)</a></li>
+        <li><a href="../ypiresies/generator-synchronizing-load-sharing.html">Παραλληλισμός &amp; Load Sharing</a></li>
+        <li><a href="../ypiresies/alarm-monitoring-systems.html">Alarm Monitoring (AMS)</a></li>
+        <li><a href="../ypiresies/troubleshooting-repairs.html">Troubleshooting &amp; Επισκευές</a></li>
+        </ul>
+        <p class="footer__more"><a href="../ypiresies.html">Όλες οι υπηρεσίες &rarr;</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Εταιρεία</h2>
+        <ul class="footer__list">
+        <li><a href="../ypiresies.html">Υπηρεσίες</a></li>
+        <li><a href="../erga.html">Έργα</a></li>
+        <li><a href="../arthra.html">Τεχνικά Άρθρα</a></li>
+        <li><a href="../etaireia.html">Η Εταιρεία</a></li>
+        <li><a href="../epikoinonia.html">Επικοινωνία</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Επικοινωνία</h2>
+        <ul class="footer__list footer__list--contact">
+          <li><a href="tel:+306989919782">+30 698 991 9782</a></li>
+          <li><a href="mailto:gianment@hotmail.com">gianment@hotmail.com</a></li>
+          <li><a href="https://wa.me/306989919782" rel="noopener">WhatsApp / Viber</a></li>
+          <li class="footer__addr">Κανάρη 26<br>Μοσχάτο, Ελλάδα</li>
+        </ul>
+        <p class="footer__emergency">24/7 Emergency Technical Support</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&#169; <span data-year>2026</span> GM Marine Automation &amp; Electrical System. Με επιφύλαξη παντός δικαιώματος.</p>
+      <p>Σχεδιασμός &amp; ανάπτυξη: <a href="https://braingroup.tech" rel="noopener">BRAIN GROUP</a></p>
+    </div>
+  </div>
+</footer>
+<a class="fab-whatsapp" href="https://wa.me/306989919782" rel="noopener" aria-label="Επικοινωνία μέσω WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.71 2.61 4.14 3.66.58.251.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31Z"/></svg></a>
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

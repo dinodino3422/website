@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Marks the document as scripted before first paint, so the entrance
+       animations can start hidden. Without JS the class never lands and every
+       element is simply visible, which is the whole point of doing it here. -->
+  <script>document.documentElement.className+=" js";</script>
+  <title>GM Marine Automation | Ναυτιλιακά Ηλεκτρολογικά &amp; Αυτοματισμοί</title>
+  <meta name="description" content="Ναυτιλιακά ηλεκτρολογικά και αυτοματισμοί πλοίων: γεννήτριες, PMS, DEIF, παραλληλισμός, alarm monitoring, retrofit και troubleshooting onboard. Ελλάδα και διεθνώς.">
+  <link rel="canonical" href="https://www.gmmarineautomation.gr/">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="GM Marine Automation &amp; Electrical System">
+  <meta name="geo.region" content="GR-A1">
+  <meta name="geo.placename" content="Moschato">
+  <link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/">
+  <link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/">
+  <link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:site_name" content="GM Marine Automation">
+  <meta property="og:title" content="GM Marine Automation | Ναυτιλιακά Ηλεκτρολογικά &amp; Αυτοματισμοί">
+  <meta property="og:description" content="Ναυτιλιακά ηλεκτρολογικά και αυτοματισμοί πλοίων: γεννήτριες, PMS, DEIF, παραλληλισμός, alarm monitoring, retrofit και troubleshooting onboard. Ελλάδα και διεθνώς.">
+  <meta property="og:url" content="https://www.gmmarineautomation.gr/">
+  <meta property="og:image" content="https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GM Marine Automation — marine electrical &amp; automation systems">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GM Marine Automation | Ναυτιλιακά Ηλεκτρολογικά &amp; Αυτοματισμοί">
+  <meta name="twitter:description" content="Ναυτιλιακά ηλεκτρολογικά και αυτοματισμοί πλοίων: γεννήτριες, PMS, DEIF, παραλληλισμός, alarm monitoring, retrofit και troubleshooting onboard. Ελλάδα και διεθνώς.">
+  <meta name="twitter:image" content="https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg">
+
+  <meta name="theme-color" content="#0a1a26">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["Organization","ProfessionalService","LocalBusiness"],"@id":"https://www.gmmarineautomation.gr/#organization","name":"GM Marine Automation & Electrical System","alternateName":"GM Marine Automation","slogan":"Marine Power, Automation & Control Solutions","url":"https://www.gmmarineautomation.gr/","logo":{"@type":"ImageObject","url":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg"},"image":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg","description":"Ναυτιλιακά ηλεκτρολογικά και συστήματα αυτοματισμού για πλοία και σκάφη: γεννήτριες, power management, DEIF, παραλληλισμός, alarm monitoring, switchboards, PLC/SCADA, retrofit και onboard troubleshooting.","foundingDate":"2022","email":"gianment@hotmail.com","telephone":"+306989919782","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"Κανάρη 26","addressLocality":"Μοσχάτο","addressRegion":"Αττική","addressCountry":"GR"},"areaServed":[{"@type":"Country","name":"Greece"},{"@type":"Place","name":"Piraeus"},{"@type":"Place","name":"Perama"},{"@type":"Place","name":"Elefsina"},{"@type":"Place","name":"Worldwide marine service"}],"knowsAbout":["Marine electrical systems","Marine automation","Power management systems","Generator synchronizing","Load sharing","DEIF generator controllers","Alarm monitoring systems","Marine switchboards","PLC HMI SCADA","Marine troubleshooting","Commissioning and sea trials","Modbus","CAN bus"],"knowsLanguage":["el","en"],"founder":{"@type":"Person","name":"Γιάννης Μειντιάι","jobTitle":"Founder & Technical Director"},"contactPoint":[{"@type":"ContactPoint","contactType":"technical support","telephone":"+306989919782","email":"gianment@hotmail.com","availableLanguage":["el","en"],"areaServed":"Worldwide"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.gmmarineautomation.gr/#website-el","url":"https://www.gmmarineautomation.gr/","name":"GM Marine Automation","inLanguage":"el","publisher":{"@id":"https://www.gmmarineautomation.gr/#organization"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Σε τι τύπους πλοίων δουλεύετε;","acceptedAnswer":{"@type":"Answer","text":"Σε εμπορικά πλοία και σε επαγγελματικά ή ιδιωτικά σκάφη. Η εμπειρία μας προέρχεται κυρίως από gas carriers, όπου οι απαιτήσεις σε ηλεκτρολογικά και automation είναι από τις υψηλότερες."}},{"@type":"Question","name":"Ταξιδεύετε εκτός Ελλάδας;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Εξυπηρετούμε την ελληνική και τη διεθνή ναυτιλιακή αγορά. Για διεθνή περιστατικά κανονίζουμε mobilization με το τεχνικό τμήμα και δίνουμε ρεαλιστικό χρόνο άφιξης."}},{"@type":"Question","name":"Δουλεύετε μόνο σε DEIF;","acceptedAnswer":{"@type":"Answer","text":"Όχι. Το DEIF είναι το πιο συχνό σύστημα generator control και power management στα πλοία που εξυπηρετούμε, αλλά αναλαμβάνουμε και εγκαταστάσεις άλλων κατασκευαστών."}},{"@type":"Question","name":"Μπορείτε να επέμβετε ενώ το πλοίο είναι εν πλω;","acceptedAnswer":{"@type":"Answer","text":"Εφόσον το επιτρέπουν οι διαδικασίες του διαχειριστή, ναι — ως riding squad ή με επιβίβαση σε ενδιάμεσο λιμάνι."}},{"@type":"Question","name":"Πώς τιμολογείτε;","acceptedAnswer":{"@type":"Answer","text":"Με βάση το εύρος της εργασίας, τον χρόνο onboard και τα υλικά. Δεν δημοσιεύουμε τιμοκατάλογο γιατί δύο πλοία με το ίδιο σύμπτωμα σπάνια χρειάζονται την ίδια εργασία. Κάθε προσφορά αναφέρει ρητά τι περιλαμβάνεται."}},{"@type":"Question","name":"Τι χρειάζεστε για να δώσετε προσφορά;","acceptedAnswer":{"@type":"Answer","text":"Τύπο και μέγεθος πλοίου, το σύστημα που αφορά, τον κατασκευαστή και το μοντέλο αν είναι γνωστά, περιγραφή του προβλήματος και το λιμάνι ή την περιοχή."}}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <p class="topbar__alert"><span class="pulse" aria-hidden="true"></span>24/7 Emergency Technical Support</p>
+    <div class="topbar__links">
+      <a href="tel:+306989919782">+30 698 991 9782</a>
+      <a href="mailto:gianment@hotmail.com">gianment@hotmail.com</a>
+      <a class="topbar__lang" href="en/index.html" hreflang="en" lang="en"
+         aria-label="Γλώσσα: English">English</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 20c0-4 2.2-6 5-6s5 2 5 6 2.2 6 5 6 5-2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="brand__text">
+        <span class="brand__name">GM <b>Marine Automation</b></span>
+        <span class="brand__tag">&amp; Electrical System</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="primary-nav" aria-label="Άνοιγμα μενού">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Κύρια πλοήγηση">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html" aria-current="page">Αρχική</a></li>
+        <li><a class="nav__link" href="ypiresies.html">Υπηρεσίες</a></li>
+        <li><a class="nav__link" href="erga.html">Έργα</a></li>
+        <li><a class="nav__link" href="arthra.html">Τεχνικά Άρθρα</a></li>
+        <li><a class="nav__link" href="etaireia.html">Η Εταιρεία</a></li>
+        <li><a class="nav__link" href="epikoinonia.html">Επικοινωνία</a></li>
+      </ul>
+      <a class="btn btn--accent nav__cta" href="epikoinonia.html">Αίτημα προσφοράς</a>
+    </nav>
+  </div>
+</header>
+
+  <main id="main">
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow eyebrow--accent">Marine Power, Automation &amp; Control Solutions</p>
+      <h1>Ηλεκτρολογικά και αυτοματισμοί πλοίων, από μηχανικό που έχει ταξιδέψει</h1>
+      <p class="hero__lead">Εγκατάσταση, αναβάθμιση και troubleshooting σε marine electrical systems, γεννήτριες, power management και συστήματα ελέγχου. Με 15+ χρόνια υπηρεσίας ως Αξιωματικός Ηλεκτρολόγος Εμπορικού Ναυτικού σε gas carriers — εμπειρία που μεταφέρεται σε κάθε έργο.</p>
+      <div class="hero__actions">
+        <a class="btn btn--accent btn--lg" href="epikoinonia.html">Αίτημα προσφοράς</a>
+        <a class="btn btn--ghost btn--lg" href="ypiresies.html">Όλες οι υπηρεσίες</a>
+      </div>
+    </div>
+    <div class="hero__figure" aria-hidden="false">
+      <svg class="sld" viewBox="0 0 460 300" role="img"
+     aria-label="Single-line diagram: two generators paralleled onto a main busbar, tie breaker and emergency switchboard">
+  <g class="sld__g" fill="none" stroke="currentColor" stroke-width="1.4"
+     stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- 1 — generators -->
+    <g class="sld__l sld__l--1">
+      <circle class="sld__gen" cx="70" cy="46" r="22"/>
+      <path d="M55 46c0-5.2 3-7.8 6.8-7.8S68.6 40.8 68.6 46s3 7.8 6.8 7.8S82.2 51.2 82.2 46"/>
+      <text x="70" y="20" class="sld__lbl">DG 1</text>
+      <circle class="sld__gen sld__gen--2" cx="200" cy="46" r="22"/>
+      <path d="M185 46c0-5.2 3-7.8 6.8-7.8s6.8 2.6 6.8 7.8 3 7.8 6.8 7.8 6.8-2.6 6.8-7.8"/>
+      <text x="200" y="20" class="sld__lbl">DG 2</text>
+    </g>
+
+    <!-- 2 — feeders down to the incoming breakers -->
+    <g class="sld__l sld__l--2">
+      <path d="M70 68v22M200 68v22"/>
+      <rect class="sld__brk" x="61" y="90" width="18" height="18"/>
+      <rect class="sld__brk sld__brk--2" x="191" y="90" width="18" height="18"/>
+      <path d="M70 108v24M200 108v24"/>
+      <path class="sld__flow" d="M70 68v64"/>
+      <path class="sld__flow sld__flow--b" d="M200 68v64"/>
+    </g>
+
+    <!-- 3 — main busbar, tie breaker, emergency board -->
+    <g class="sld__l sld__l--3">
+      <path class="sld__bus" d="M40 132h300" stroke-width="4"/>
+      <path class="sld__flow sld__flow--bus" d="M40 132h300"/>
+      <text x="40" y="124" class="sld__lbl sld__lbl--l">MAIN SWITCHBOARD 440V</text>
+
+      <path d="M340 132h34"/>
+      <rect class="sld__brk sld__brk--tie" x="374" y="123" width="18" height="18"/>
+      <path d="M392 132h28"/>
+      <path class="sld__bus" d="M420 100v90" stroke-width="4"/>
+      <text x="404" y="212" class="sld__lbl">EMCY</text>
+    </g>
+
+    <!-- 4 — outgoing feeders -->
+    <g class="sld__l sld__l--4">
+      <path d="M80 132v40M140 132v40M200 132v40M260 132v40M320 132v40"/>
+      <rect class="sld__brk" x="71" y="172" width="18" height="18"/>
+      <rect class="sld__brk sld__brk--2" x="131" y="172" width="18" height="18"/>
+      <rect class="sld__brk sld__brk--3" x="191" y="172" width="18" height="18"/>
+      <rect class="sld__brk sld__brk--4" x="251" y="172" width="18" height="18"/>
+      <rect class="sld__brk sld__brk--5" x="311" y="172" width="18" height="18"/>
+      <path d="M80 190v22M140 190v22M200 190v22M260 190v22M320 190v22"/>
+      <path class="sld__flow sld__flow--c" d="M80 132v80M140 132v80M200 132v80M260 132v80M320 132v80"/>
+    </g>
+
+    <!-- 5 — consumers -->
+    <g class="sld__l sld__l--5">
+      <circle class="sld__load" cx="80" cy="224" r="12"/><path d="M74 224h12M80 218v12"/>
+      <circle class="sld__load sld__load--2" cx="140" cy="224" r="12"/><path d="M134 224h12M140 218v12"/>
+      <circle class="sld__load sld__load--3" cx="200" cy="224" r="12"/><path d="M194 224h12M200 218v12"/>
+      <circle class="sld__load sld__load--4" cx="260" cy="224" r="12"/><path d="M254 224h12M260 218v12"/>
+      <circle class="sld__load sld__load--5" cx="320" cy="224" r="12"/><path d="M314 224h12M320 218v12"/>
+      <text x="200" y="258" class="sld__lbl">CONSUMERS</text>
+    </g>
+
+    <!-- synchronizing annotation -->
+    <g class="sld__l sld__l--sync">
+      <path class="sld__sync" d="M92 99h86" stroke-dasharray="4 4"/>
+      <text x="135" y="92" class="sld__lbl sld__lbl--accent">SYNC</text>
+    </g>
+  </g>
+</svg>
+      <p class="hero__figcap">Παραλληλισμός γεννητριών σε κύριο πίνακα, tie breaker και πίνακας ανάγκης — το πεδίο στο οποίο δουλεύουμε.</p>
+    </div>
+  </div>
+  <div class="wrap"><div class="stats">
+      <div class="stat"><span class="stat__v">15+</span><span class="stat__l">χρόνια εν πλω ως Αξιωματικός Ηλεκτρολόγος</span></div>
+      <div class="stat"><span class="stat__v">24/7</span><span class="stat__l">τεχνική υποστήριξη για επείγοντα</span></div>
+      <div class="stat"><span class="stat__v">15</span><span class="stat__l">τομείς εξειδίκευσης onboard</span></div>
+      <div class="stat"><span class="stat__v">GR + Worldwide</span><span class="stat__l">κάλυψη σε Ελλάδα και διεθνώς</span></div>
+    </div></div>
+</section>
+<section class="section section--intro">
+  <div class="wrap">
+<div class="split">
+      <div class="split__l">
+        <div class="sec-head ">
+    <p class="eyebrow">Ποιοι είμαστε</p>
+    <h2>Τεχνική γνώση που αποκτήθηκε στο μηχανοστάσιο, όχι στην αίθουσα</h2>
+    </div>
+      </div>
+      <div class="split__r">
+        <p>Η GM Marine Automation &amp; Electrical System εξειδικεύεται σε ηλεκτρολογικά και συστήματα αυτοματισμού για πλοία και σκάφη. Αναλαμβάνουμε εγκατάσταση, επισκευή και αναβάθμιση γεννητριών, ηλεκτρικών πινάκων, PLC/HMI, συστημάτων παραλληλισμού, alarm monitoring και power management.</p>
+        <p>Η διαφορά μας δεν είναι εμπορική. Είναι ότι έχουμε ζήσει τη βλάβη από την άλλη πλευρά: ως πλήρωμα, εν πλω, με το πλοίο σε λειτουργία και χωρίς δυνατότητα να περιμένουμε τεχνικό. Αυτή η οπτική καθορίζει τι θεωρούμε ολοκληρωμένη δουλειά — τεκμηρίωση που μπορεί να χρησιμοποιήσει το πλήρωμα, ρυθμίσεις που εξηγούνται, και συστήματα που μπορούν να διαγνωστούν χωρίς εμάς.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section--services">
+  <div class="wrap">
+<div class="sec-head ">
+    <h2>Κύριοι τομείς</h2>
+    <p class="sec-head__lead">Δεκαπέντε τομείς που καλύπτουν την ηλεκτρική ισχύ και τον αυτοματισμό ενός πλοίου, από τη γεννήτρια μέχρι την οθόνη του μηχανικού. Κάθε σελίδα περιγράφει τι αναλαμβάνουμε, ποια συμπτώματα αντιμετωπίζουμε και τι παραδίδουμε.</p>
+    </div>
+    <div class="grid grid--3">
+      <a class="card card--service" href="ypiresies/marine-automation-control-systems.html">
+        
+        <span class="card__icon"><svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="16" width="14" height="12" rx="1"/><rect x="28" y="16" width="14" height="12" rx="1"/><path d="M20 22h8"/><path d="M25 19l3 3-3 3"/><path d="M35 28v7H13v-7"/><path d="M16 31l-3 4 3 4" transform="translate(0,-8)"/></svg></span>
+        <span class="card__body">
+          <span class="card__title">Συστήματα Αυτοματισμού &amp; Ελέγχου Πλοίων</span>
+          <span class="card__text">Σχεδιασμός, εγκατάσταση και αναβάθμιση συστημάτων αυτοματισμού και ελέγχου για μηχανοστάσια πλοίων.</span>
+        </span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--service" href="ypiresies/deif-power-management.html">
+        
+        <span class="card__icon"><svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="8" width="30" height="32" rx="2"/><rect x="14" y="13" width="20" height="9" rx="1"/><path d="M15 27h4M22 27h4M29 27h4M15 33h4M22 33h4M29 33h4"/></svg></span>
+        <span class="card__body">
+          <span class="card__title">Συστήματα DEIF — Generator Control &amp; Power Management</span>
+          <span class="card__text">Εγκατάσταση, παραμετροποίηση και troubleshooting συστημάτων DEIF για generator control, synchronizing, load sharing, protection και PMS σε πλοία και σκάφη.</span>
+        </span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--service" href="ypiresies/power-management-systems.html">
+        
+        <span class="card__icon"><svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 20h32"/><path d="M14 20v-8M24 20v-8M34 20v-8"/><path d="M8 20v6M40 20v6"/><path d="M12 32h24"/><path d="M12 32v4M18 32v3M24 32v5M30 32v3M36 32v4"/></svg></span>
+        <span class="card__body">
+          <span class="card__title">Power Management Systems (PMS)</span>
+          <span class="card__text">Συστήματα αυτόματης διαχείρισης ισχύος πλοίου: auto start/stop γεννητριών, load sharing, load shedding, heavy consumer request και blackout recovery.</span>
+        </span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--service" href="ypiresies/generator-synchronizing-load-sharing.html">
+        
+        <span class="card__icon"><svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24c3-9 6-9 9 0s6 9 9 0"/><path d="M15 28c3-9 6-9 9 0s6 9 9 0" opacity=".55"/><path d="M38 16v16"/><path d="M34 20l4-4 4 4"/></svg></span>
+        <span class="card__body">
+          <span class="card__title">Παραλληλισμός &amp; Load Sharing Γεννητριών</span>
+          <span class="card__text">Εγκατάσταση, ρύθμιση και troubleshooting συστημάτων παραλληλισμού γεννητριών πλοίου: αυτόματος συγχρονισμός, kW και kVAr load sharing, προστασίες.</span>
+        </span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--service" href="ypiresies/alarm-monitoring-systems.html">
+        
+        <span class="card__icon"><svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 34l7-4 6 3 5-11 6 14 5-9 7 3"/><path d="M6 18h36" stroke-dasharray="3 3"/><circle cx="30" cy="26" r="2.6" fill="currentColor" stroke="none"/></svg></span>
+        <span class="card__body">
+          <span class="card__title">Alarm Monitoring Systems (AMS)</span>
+          <span class="card__text">Σχεδιασμός, αναβάθμιση και troubleshooting Alarm Monitoring Systems για μηχανοστάσιο και κρίσιμα συστήματα πλοίου.</span>
+        </span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--service" href="ypiresies/troubleshooting-repairs.html">
+        
+        <span class="card__icon"><svg class="icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24h11"/><path d="M31 24h11"/><path d="M17 24l6-8-2 8h6l-6 8 2-8z"/><path d="M22 34v5M26 34v5" opacity=".5"/></svg></span>
+        <span class="card__body">
+          <span class="card__title">Troubleshooting &amp; Επισκευές Onboard</span>
+          <span class="card__text">Onboard fault finding και επισκευές σε ηλεκτρολογικά, automation και control systems πλοίων, με στόχο την άμεση και ασφαλή αποκατάσταση λειτουργίας.</span>
+        </span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+    <p class="sec-more"><a class="link-arrow" href="ypiresies.html">Όλες οι υπηρεσίες &rarr;</a></p>
+  </div>
+</section>
+<section class="section section--dark">
+  <div class="wrap">
+<div class="sec-head ">
+    <p class="eyebrow">Γιατί εμάς</p>
+    <h2>Τι σημαίνει στην πράξη «εμπειρία στη θάλασσα»</h2>
+    </div>
+    <div class="grid grid--4 grid--features">
+      <div class="feature"><span class="feature__no">01</span><h3>Διάγνωση πριν την αντικατάσταση</h3><p>Ξεκινάμε από μέτρηση, σχέδια και alarm logs. Η αντικατάσταση εξαρτημάτων μέχρι να σταματήσει το σύμπτωμα δεν είναι διάγνωση — είναι λογαριασμός.</p></div>
+      <div class="feature"><span class="feature__no">02</span><h3>Δουλεύουμε με το πλοίο σε λειτουργία</h3><p>Ο προγραμματισμός γίνεται γύρω από το port stay και το trade, σε φάσεις όπου χρειάζεται. Το downtime είναι μέρος του κόστους και το αντιμετωπίζουμε ως τέτοιο.</p></div>
+      <div class="feature"><span class="feature__no">03</span><h3>Τεκμηρίωση που παραδίδεται</h3><p>As-built σχέδια, parameter files, I/O lists και πρωτόκολλα δοκιμών. Το πλοίο δεν πρέπει να εξαρτάται από τη μνήμη ενός προμηθευτή.</p></div>
+      <div class="feature"><span class="feature__no">04</span><h3>Καθαρά όρια ευθύνης</h3><p>Λέμε τι είναι προσωρινή αποκατάσταση και τι μόνιμη, τι είναι ηλεκτρολογικό και τι μηχανολογικό, και τι δεν αναλαμβάνουμε.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section ">
+  <div class="wrap">
+<div class="sec-head ">
+    <p class="eyebrow">Ποιους εξυπηρετούμε</p>
+    <h2>Ναυτιλιακές εταιρείες, τεχνικά τμήματα και ναυπηγεία</h2>
+    <p class="sec-head__lead">Απευθυνόμαστε σε οργανισμούς που αξιολογούν έναν τεχνικό συνεργάτη με βάση την τεκμηρίωση και τη συνέπεια, όχι την τιμή μονάδας.</p>
+    </div>
+    <div class="grid grid--4">
+      <div class="tile"><h3>Ναυτιλιακές εταιρείες &amp; ship managers</h3><p>Τεχνική υποστήριξη στόλου, planned εργασίες και επείγοντα περιστατικά.</p></div>
+      <div class="tile"><h3>Τεχνικά τμήματα πλοίων</h3><p>Δεύτερη γνώμη, ανάλυση συμβάντων, υποστήριξη σε επιθεωρήσεις και προετοιμασία survey.</p></div>
+      <div class="tile"><h3>Πλοιοκτήτες</h3><p>Αξιολόγηση κατάστασης εγκατάστασης, μελέτη retrofit και έλεγχος εργασιών τρίτων.</p></div>
+      <div class="tile"><h3>Ναυπηγεία &amp; marine service companies</h3><p>Εξειδικευμένη υποστήριξη σε automation και generator control κατά τη διάρκεια έργων.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section section--process">
+  <div class="wrap">
+<div class="sec-head ">
+    <p class="eyebrow">Πώς δουλεύουμε</p>
+    <h2>Από το πρώτο μήνυμα μέχρι την παράδοση</h2>
+    </div>
+    <ol class="steps">
+      <li class="step"><span class="step__no">01</span><h3 class="step__h">Περιγραφή &amp; προαξιολόγηση</h3><p>Μας στέλνετε το πρόβλημα, τον τύπο του πλοίου και τον εξοπλισμό. Ζητάμε alarm logs, σχέδια και φωτογραφίες πινακίδων. Πολλά περιορίζονται ήδη σε αυτό το στάδιο.</p></li>
+      <li class="step"><span class="step__no">02</span><h3 class="step__h">Πρόταση με σαφές εύρος</h3><p>Λαμβάνετε πλάνο επέμβασης: τι ελέγχεται, τι απαιτείται από το πλοίο, εκτίμηση χρόνου και downtime, και τι δεν περιλαμβάνεται.</p></li>
+      <li class="step"><span class="step__no">03</span><h3 class="step__h">Εργασία onboard</h3><p>Επέμβαση με μετρήσεις και καταγραφή σε κάθε βήμα. Ενημέρωση του τεχνικού τμήματος καθημερινά, όχι μόνο στο τέλος.</p></li>
+      <li class="step"><span class="step__no">04</span><h3 class="step__h">Παράδοση &amp; τεκμηρίωση</h3><p>Πρωτόκολλα δοκιμών, ενημερωμένα σχέδια, backups και λίστα προτεινόμενων ανταλλακτικών. Παραμένουμε διαθέσιμοι για υποστήριξη.</p></li>
+    </ol>
+  </div>
+</section>
+<section class="section ">
+  <div class="wrap">
+<div class="sec-head ">
+    <p class="eyebrow">Τεχνικά άρθρα</p>
+    <h2>Σημειώσεις από το μηχανοστάσιο</h2>
+    <p class="sec-head__lead">Γραμμένα για μηχανικούς, όχι για μηχανές αναζήτησης. Ό,τι συναντάμε συχνά και αξίζει να γραφτεί κάπου.</p>
+    </div>
+    <div class="grid grid--3">
+      <a class="card card--article" href="arthra/blackout-recovery-pms.html">
+        <span class="card__meta"><time datetime="2026-08-19">2026-08-19</time><span>7 λεπτά ανάγνωσης</span></span>
+        <span class="card__title">Blackout στο μηχανοστάσιο: γιατί το PMS δεν έσωσε το πλοίο</span>
+        <span class="card__text">Ένα blackout σπάνια οφείλεται σε βλάβη. Συνήθως οφείλεται σε τρεις παραμέτρους που κανείς δεν κοίταξε μετά το commissioning.</span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--article" href="arthra/kw-kvar-load-sharing.html">
+        <span class="card__meta"><time datetime="2026-08-16">2026-08-16</time><span>8 λεπτά ανάγνωσης</span></span>
+        <span class="card__title">kW και kVAr load sharing: γιατί οι γεννήτριες δεν μοιράζονται σωστά</span>
+        <span class="card__text">Το ενεργό και το άεργο φορτίο μοιράζονται από δύο εντελώς διαφορετικά συστήματα. Αν τα μπερδέψεις στη διάγνωση, θα ρυθμίζεις λάθος μηχάνημα.</span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--article" href="arthra/generator-controller-commissioning-mistakes.html">
+        <span class="card__meta"><time datetime="2026-08-12">2026-08-12</time><span>7 λεπτά ανάγνωσης</span></span>
+        <span class="card__title">Επτά λάθη στην παραμετροποίηση generator controller</span>
+        <span class="card__text">Τα περισσότερα δεν φαίνονται ποτέ σε κανονική λειτουργία. Φαίνονται την πρώτη φορά που κάτι πάει στραβά — δηλαδή ακριβώς τότε που δεν πρέπει.</span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+    <p class="sec-more"><a class="link-arrow" href="arthra.html">Τεχνικά Άρθρα &rarr;</a></p>
+  </div>
+</section>
+<section class="section section--faq">
+  <div class="wrap">
+<div class="faq-wrap">
+    <h2 class="faq__h">Συχνές ερωτήσεις</h2>
+    <div class="faq">
+    <details class="faq__item"><summary><span>Σε τι τύπους πλοίων δουλεύετε;</span></summary><div class="faq__a"><p>Σε εμπορικά πλοία και σε επαγγελματικά ή ιδιωτικά σκάφη. Η εμπειρία μας προέρχεται κυρίως από gas carriers, όπου οι απαιτήσεις σε ηλεκτρολογικά και automation είναι από τις υψηλότερες.</p></div></details>
+    <details class="faq__item"><summary><span>Ταξιδεύετε εκτός Ελλάδας;</span></summary><div class="faq__a"><p>Ναι. Εξυπηρετούμε την ελληνική και τη διεθνή ναυτιλιακή αγορά. Για διεθνή περιστατικά κανονίζουμε mobilization με το τεχνικό τμήμα και δίνουμε ρεαλιστικό χρόνο άφιξης.</p></div></details>
+    <details class="faq__item"><summary><span>Δουλεύετε μόνο σε DEIF;</span></summary><div class="faq__a"><p>Όχι. Το DEIF είναι το πιο συχνό σύστημα generator control και power management στα πλοία που εξυπηρετούμε, αλλά αναλαμβάνουμε και εγκαταστάσεις άλλων κατασκευαστών.</p></div></details>
+    <details class="faq__item"><summary><span>Μπορείτε να επέμβετε ενώ το πλοίο είναι εν πλω;</span></summary><div class="faq__a"><p>Εφόσον το επιτρέπουν οι διαδικασίες του διαχειριστή, ναι — ως riding squad ή με επιβίβαση σε ενδιάμεσο λιμάνι.</p></div></details>
+    <details class="faq__item"><summary><span>Πώς τιμολογείτε;</span></summary><div class="faq__a"><p>Με βάση το εύρος της εργασίας, τον χρόνο onboard και τα υλικά. Δεν δημοσιεύουμε τιμοκατάλογο γιατί δύο πλοία με το ίδιο σύμπτωμα σπάνια χρειάζονται την ίδια εργασία. Κάθε προσφορά αναφέρει ρητά τι περιλαμβάνεται.</p></div></details>
+    <details class="faq__item"><summary><span>Τι χρειάζεστε για να δώσετε προσφορά;</span></summary><div class="faq__a"><p>Τύπο και μέγεθος πλοίου, το σύστημα που αφορά, τον κατασκευαστή και το μοντέλο αν είναι γνωστά, περιγραφή του προβλήματος και το λιμάνι ή την περιοχή.</p></div></details>
+    </div>
+    </div>
+  </div>
+</section>
+<section class="band band--cta">
+  <div class="wrap band__inner">
+    <div>
+      <h2>Στείλτε μας το πρόβλημα</h2>
+      <p>Περιγράψτε το σύστημα, το πλοίο και το τι παρατηρείτε. Απαντάμε με συγκεκριμένο πλάνο επέμβασης και σαφές εύρος εργασιών.</p>
+    </div>
+    <div class="band__actions">
+      <a class="btn btn--accent btn--lg" href="epikoinonia.html">Ζητήστε τεχνική προσφορά</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+306989919782">Καλέστε μας +30 698 991 9782</a>
+    </div>
+  </div>
+</section>
+  </main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 20c0-4 2.2-6 5-6s5 2 5 6 2.2 6 5 6 5-2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="brand__text">
+            <span class="brand__name">GM <b>Marine Automation</b></span>
+            <span class="brand__tag">&amp; Electrical System</span>
+          </span>
+        </a>
+        <p class="footer__blurb">Marine Power, Automation &amp; Control Solutions</p>
+        <dl class="footer__meta">
+          <dt>Περιοχές εξυπηρέτησης</dt><dd>Ελλάδα &amp; worldwide marine service</dd>
+          <dt>Ωράριο</dt><dd>Δευτέρα – Παρασκευή 08:00 – 18:00<br>Σάββατο: Κατόπιν συνεννόησης</dd>
+        </dl>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Υπηρεσίες</h2>
+        <ul class="footer__list">
+        <li><a href="ypiresies/marine-automation-control-systems.html">Αυτοματισμός &amp; Έλεγχος</a></li>
+        <li><a href="ypiresies/deif-power-management.html">Συστήματα DEIF</a></li>
+        <li><a href="ypiresies/power-management-systems.html">Power Management (PMS)</a></li>
+        <li><a href="ypiresies/generator-synchronizing-load-sharing.html">Παραλληλισμός &amp; Load Sharing</a></li>
+        <li><a href="ypiresies/alarm-monitoring-systems.html">Alarm Monitoring (AMS)</a></li>
+        <li><a href="ypiresies/troubleshooting-repairs.html">Troubleshooting &amp; Επισκευές</a></li>
+        </ul>
+        <p class="footer__more"><a href="ypiresies.html">Όλες οι υπηρεσίες &rarr;</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Εταιρεία</h2>
+        <ul class="footer__list">
+        <li><a href="ypiresies.html">Υπηρεσίες</a></li>
+        <li><a href="erga.html">Έργα</a></li>
+        <li><a href="arthra.html">Τεχνικά Άρθρα</a></li>
+        <li><a href="etaireia.html">Η Εταιρεία</a></li>
+        <li><a href="epikoinonia.html">Επικοινωνία</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Επικοινωνία</h2>
+        <ul class="footer__list footer__list--contact">
+          <li><a href="tel:+306989919782">+30 698 991 9782</a></li>
+          <li><a href="mailto:gianment@hotmail.com">gianment@hotmail.com</a></li>
+          <li><a href="https://wa.me/306989919782" rel="noopener">WhatsApp / Viber</a></li>
+          <li class="footer__addr">Κανάρη 26<br>Μοσχάτο, Ελλάδα</li>
+        </ul>
+        <p class="footer__emergency">24/7 Emergency Technical Support</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&#169; <span data-year>2026</span> GM Marine Automation &amp; Electrical System. Με επιφύλαξη παντός δικαιώματος.</p>
+      <p>Σχεδιασμός &amp; ανάπτυξη: <a href="https://braingroup.tech" rel="noopener">BRAIN GROUP</a></p>
+    </div>
+  </div>
+</footer>
+<a class="fab-whatsapp" href="https://wa.me/306989919782" rel="noopener" aria-label="Επικοινωνία μέσω WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.71 2.61 4.14 3.66.58.251.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31Z"/></svg></a>
+  <script src="assets/js/site.js" defer></script>
+</body>
+</html>

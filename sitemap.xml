@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.gmmarineautomation.gr/</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/erga.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/erga.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/erga.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/arthra.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/etaireia.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/etaireia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/company.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/etaireia.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/epikoinonia.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/epikoinonia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/epikoinonia.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/marine-automation-control-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/marine-automation-control-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/marine-automation-control-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/marine-automation-control-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/deif-power-management.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/deif-power-management.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/deif-power-management.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/deif-power-management.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/power-management-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/power-management-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/power-management-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/power-management-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/generator-synchronizing-load-sharing.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/generator-synchronizing-load-sharing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/generator-synchronizing-load-sharing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/generator-synchronizing-load-sharing.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/alarm-monitoring-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/alarm-monitoring-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/alarm-monitoring-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/alarm-monitoring-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/troubleshooting-repairs.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/troubleshooting-repairs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/troubleshooting-repairs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/troubleshooting-repairs.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/electrical-retrofit.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/electrical-retrofit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/electrical-retrofit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/electrical-retrofit.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/marine-electrical-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/marine-electrical-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/marine-electrical-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/marine-electrical-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/marine-generators.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/marine-generators.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/marine-generators.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/marine-generators.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/deif-controller-programming.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/deif-controller-programming.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/deif-controller-programming.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/deif-controller-programming.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/switchboards.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/switchboards.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/switchboards.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/switchboards.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/plc-hmi-scada.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/commissioning-sea-trials.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/commissioning-sea-trials.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/commissioning-sea-trials.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/commissioning-sea-trials.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/marine-networks.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/marine-networks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/marine-networks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/marine-networks.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/ypiresies/spare-parts.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/spare-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/spare-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/spare-parts.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/arthra/blackout-recovery-pms.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/blackout-recovery-pms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/blackout-recovery-pms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/blackout-recovery-pms.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/arthra/kw-kvar-load-sharing.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/kw-kvar-load-sharing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/kw-kvar-load-sharing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/kw-kvar-load-sharing.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/arthra/generator-controller-commissioning-mistakes.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/generator-controller-commissioning-mistakes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/generator-controller-commissioning-mistakes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/generator-controller-commissioning-mistakes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/arthra/alarm-monitoring-false-alarms.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/alarm-monitoring-false-alarms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/alarm-monitoring-false-alarms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/alarm-monitoring-false-alarms.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/earth-fault-marine-it-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/projects.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/erga.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/projects.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/erga.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/insights.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/company.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/etaireia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/company.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/etaireia.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/epikoinonia.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/epikoinonia.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/marine-automation-control-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/marine-automation-control-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/marine-automation-control-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/marine-automation-control-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/deif-power-management.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/deif-power-management.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/deif-power-management.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/deif-power-management.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/power-management-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/power-management-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/power-management-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/power-management-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/generator-synchronizing-load-sharing.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/generator-synchronizing-load-sharing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/generator-synchronizing-load-sharing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/generator-synchronizing-load-sharing.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/alarm-monitoring-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/alarm-monitoring-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/alarm-monitoring-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/alarm-monitoring-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/troubleshooting-repairs.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/troubleshooting-repairs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/troubleshooting-repairs.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/troubleshooting-repairs.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/electrical-retrofit.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/electrical-retrofit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/electrical-retrofit.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/electrical-retrofit.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/marine-electrical-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/marine-electrical-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/marine-electrical-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/marine-electrical-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/marine-generators.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/marine-generators.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/marine-generators.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/marine-generators.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/deif-controller-programming.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/deif-controller-programming.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/deif-controller-programming.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/deif-controller-programming.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/switchboards.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/switchboards.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/switchboards.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/switchboards.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/plc-hmi-scada.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/plc-hmi-scada.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/plc-hmi-scada.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/commissioning-sea-trials.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/commissioning-sea-trials.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/commissioning-sea-trials.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/commissioning-sea-trials.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/marine-networks.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/marine-networks.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/marine-networks.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/marine-networks.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/services/spare-parts.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/ypiresies/spare-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/services/spare-parts.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/ypiresies/spare-parts.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/insights/blackout-recovery-pms.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/blackout-recovery-pms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/blackout-recovery-pms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/blackout-recovery-pms.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/insights/kw-kvar-load-sharing.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/kw-kvar-load-sharing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/kw-kvar-load-sharing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/kw-kvar-load-sharing.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/insights/generator-controller-commissioning-mistakes.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/generator-controller-commissioning-mistakes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/generator-controller-commissioning-mistakes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/generator-controller-commissioning-mistakes.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/insights/alarm-monitoring-false-alarms.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/alarm-monitoring-false-alarms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/alarm-monitoring-false-alarms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/alarm-monitoring-false-alarms.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gmmarineautomation.gr/en/insights/earth-fault-marine-it-systems.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/earth-fault-marine-it-systems.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

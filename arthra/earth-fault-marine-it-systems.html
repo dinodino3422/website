@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Marks the document as scripted before first paint, so the entrance
+       animations can start hidden. Without JS the class never lands and every
+       element is simply visible, which is the whole point of doing it here. -->
+  <script>document.documentElement.className+=" js";</script>
+  <title>Earth Fault σε Δίκτυο Πλοίου | Μεθοδικός Εντοπισμός</title>
+  <meta name="description" content="Γιατί το δίκτυο ενός πλοίου είναι αγείωτο, τι σημαίνει πραγματικά ένα earth fault alarm, και η μεθοδική διαδικασία εντοπισμού χωρίς άσκοπες διακοπές.">
+  <link rel="canonical" href="https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="GM Marine Automation &amp; Electrical System">
+  <meta name="geo.region" content="GR-A1">
+  <meta name="geo.placename" content="Moschato">
+  <link rel="alternate" hreflang="el" href="https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html">
+  <link rel="alternate" hreflang="en" href="https://www.gmmarineautomation.gr/en/insights/earth-fault-marine-it-systems.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:site_name" content="GM Marine Automation">
+  <meta property="og:title" content="Earth Fault σε Δίκτυο Πλοίου | Μεθοδικός Εντοπισμός">
+  <meta property="og:description" content="Γιατί το δίκτυο ενός πλοίου είναι αγείωτο, τι σημαίνει πραγματικά ένα earth fault alarm, και η μεθοδική διαδικασία εντοπισμού χωρίς άσκοπες διακοπές.">
+  <meta property="og:url" content="https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html">
+  <meta property="og:image" content="https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GM Marine Automation — marine electrical &amp; automation systems">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Earth Fault σε Δίκτυο Πλοίου | Μεθοδικός Εντοπισμός">
+  <meta name="twitter:description" content="Γιατί το δίκτυο ενός πλοίου είναι αγείωτο, τι σημαίνει πραγματικά ένα earth fault alarm, και η μεθοδική διαδικασία εντοπισμού χωρίς άσκοπες διακοπές.">
+  <meta name="twitter:image" content="https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg">
+
+  <meta name="theme-color" content="#0a1a26">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="../assets/css/site.css">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["Organization","ProfessionalService","LocalBusiness"],"@id":"https://www.gmmarineautomation.gr/#organization","name":"GM Marine Automation & Electrical System","alternateName":"GM Marine Automation","slogan":"Marine Power, Automation & Control Solutions","url":"https://www.gmmarineautomation.gr/","logo":{"@type":"ImageObject","url":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg"},"image":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg","description":"Ναυτιλιακά ηλεκτρολογικά και συστήματα αυτοματισμού για πλοία και σκάφη: γεννήτριες, power management, DEIF, παραλληλισμός, alarm monitoring, switchboards, PLC/SCADA, retrofit και onboard troubleshooting.","foundingDate":"2022","email":"gianment@hotmail.com","telephone":"+306989919782","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"Κανάρη 26","addressLocality":"Μοσχάτο","addressRegion":"Αττική","addressCountry":"GR"},"areaServed":[{"@type":"Country","name":"Greece"},{"@type":"Place","name":"Piraeus"},{"@type":"Place","name":"Perama"},{"@type":"Place","name":"Elefsina"},{"@type":"Place","name":"Worldwide marine service"}],"knowsAbout":["Marine electrical systems","Marine automation","Power management systems","Generator synchronizing","Load sharing","DEIF generator controllers","Alarm monitoring systems","Marine switchboards","PLC HMI SCADA","Marine troubleshooting","Commissioning and sea trials","Modbus","CAN bus"],"knowsLanguage":["el","en"],"founder":{"@type":"Person","name":"Γιάννης Μειντιάι","jobTitle":"Founder & Technical Director"},"contactPoint":[{"@type":"ContactPoint","contactType":"technical support","telephone":"+306989919782","email":"gianment@hotmail.com","availableLanguage":["el","en"],"areaServed":"Worldwide"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.gmmarineautomation.gr/#website-el","url":"https://www.gmmarineautomation.gr/","name":"GM Marine Automation","inLanguage":"el","publisher":{"@id":"https://www.gmmarineautomation.gr/#organization"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Αρχική","item":"https://www.gmmarineautomation.gr/"},{"@type":"ListItem","position":2,"name":"Τεχνικά Άρθρα","item":"https://www.gmmarineautomation.gr/arthra.html"},{"@type":"ListItem","position":3,"name":"Earth fault στο δίκτυο του πλοίου: πώς εντοπίζεται πραγματικά","item":"https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Earth fault στο δίκτυο του πλοίου: πώς εντοπίζεται πραγματικά","description":"Γιατί το δίκτυο ενός πλοίου είναι αγείωτο, τι σημαίνει πραγματικά ένα earth fault alarm, και η μεθοδική διαδικασία εντοπισμού χωρίς άσκοπες διακοπές.","inLanguage":"el","datePublished":"2026-08-04","dateModified":"2026-08-04","author":{"@id":"https://www.gmmarineautomation.gr/#organization"},"publisher":{"@id":"https://www.gmmarineautomation.gr/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.gmmarineautomation.gr/arthra/earth-fault-marine-it-systems.html"},"image":"https://www.gmmarineautomation.gr/assets/img/og-gm-marine-automation.jpg","about":{"@type":"Thing","name":"Onboard Troubleshooting & Repairs"}}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <p class="topbar__alert"><span class="pulse" aria-hidden="true"></span>24/7 Emergency Technical Support</p>
+    <div class="topbar__links">
+      <a href="tel:+306989919782">+30 698 991 9782</a>
+      <a href="mailto:gianment@hotmail.com">gianment@hotmail.com</a>
+      <a class="topbar__lang" href="../en/insights/earth-fault-marine-it-systems.html" hreflang="en" lang="en"
+         aria-label="Γλώσσα: English">English</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="../index.html">
+      <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 20c0-4 2.2-6 5-6s5 2 5 6 2.2 6 5 6 5-2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="brand__text">
+        <span class="brand__name">GM <b>Marine Automation</b></span>
+        <span class="brand__tag">&amp; Electrical System</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="primary-nav" aria-label="Άνοιγμα μενού">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Κύρια πλοήγηση">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="../index.html">Αρχική</a></li>
+        <li><a class="nav__link" href="../ypiresies.html">Υπηρεσίες</a></li>
+        <li><a class="nav__link" href="../erga.html">Έργα</a></li>
+        <li><a class="nav__link" href="../arthra.html" aria-current="page">Τεχνικά Άρθρα</a></li>
+        <li><a class="nav__link" href="../etaireia.html">Η Εταιρεία</a></li>
+        <li><a class="nav__link" href="../epikoinonia.html">Επικοινωνία</a></li>
+      </ul>
+      <a class="btn btn--accent nav__cta" href="../epikoinonia.html">Αίτημα προσφοράς</a>
+    </nav>
+  </div>
+</header>
+<nav class="crumbs" aria-label="Διαδρομή πλοήγησης"><div class="wrap"><ol><li><a href="../index.html">Αρχική</a></li><li><a href="../arthra.html">Τεχνικά Άρθρα</a></li><li><span aria-current="page">Earth fault στο δίκτυο του πλοίου: πώς εντοπίζεται πραγματικά</span></li></ol></div></nav>
+  <main id="main">
+<section class="page-head page-head--article">
+  <div class="wrap">
+    <p class="article__meta">
+      <time datetime="2026-08-04">2026-08-04</time>
+      <span>8 λεπτά ανάγνωσης</span>
+    </p>
+    <h1>Earth fault στο δίκτυο του πλοίου: πώς εντοπίζεται πραγματικά</h1>
+    <p class="page-head__lead">Το πλοίο δεν σταματά με το πρώτο earth fault — και ακριβώς γι’ αυτό το δεύτερο είναι επικίνδυνο.</p>
+  </div>
+</section>
+<section class="section section--article"><div class="wrap layout">
+      <article class="layout__main prose">
+      <p>Τα περισσότερα δίκτυα χαμηλής τάσης σε πλοία είναι αγείωτα ή γειωμένα μέσω υψηλής αντίστασης. Η επιλογή αυτή είναι σκόπιμη: ένα σφάλμα μόνωσης σε μία φάση δεν δημιουργεί ρεύμα βραχυκύκλωσης και δεν ρίχνει τον breaker. Το πλοίο συνεχίζει να λειτουργεί.</p>
+      <p>Αυτό είναι το πλεονέκτημα και ταυτόχρονα η παγίδα. Το σύστημα ανέχεται το πρώτο σφάλμα. Δεν ανέχεται το δεύτερο: ένα δεύτερο σφάλμα σε διαφορετική φάση δημιουργεί πλήρες βραχυκύκλωμα μέσω των δύο σημείων, συχνά σε καλώδια που δεν προστατεύονται για τέτοιο ρεύμα.</p>
+      <h2>Τι δείχνει και τι δεν δείχνει το insulation monitoring</h2>
+      <p>Η μονάδα επιτήρησης μόνωσης μετρά την αντίσταση του συνολικού δικτύου προς τη γη. Δείχνει ότι υπάρχει σφάλμα και πόσο σοβαρό είναι. Δεν δείχνει πού. Η κατεύθυνση «ποια αναχώρηση» απαιτεί είτε σύστημα εντοπισμού με σήμα έγχυσης, είτε μεθοδική διαδικασία.</p>
+      <aside class="pull"><p>Ένα insulation monitoring που έχει απενεργοποιηθεί επειδή «χτυπούσε συνέχεια» είναι από μόνο του σοβαρότερο εύρημα από το ίδιο το earth fault.</p></aside>
+      <h2>Πριν από κάθε αποσύνδεση: τι λέει το ίδιο το σφάλμα</h2>
+      <p>Η πιο χρήσιμη πληροφορία συλλέγεται πριν αγγίξει κανείς breaker. Τρεις παρατηρήσεις στενεύουν δραστικά την αναζήτηση:</p>
+      <ul class="list">
+      <li>Εμφανίζεται και εξαφανίζεται; Τότε συνδέεται με κάτι που εκκινεί, θερμαίνεται ή βρέχεται. Καταγράψτε τι λειτουργούσε κάθε φορά.</li>
+      <li>Ποια φάση; Οι περισσότερες μονάδες δείχνουν την προσβεβλημένη φάση. Ένα μονοφασικό φορτίο περιορίζει αμέσως τον κατάλογο υποψηφίων.</li>
+      <li>Πόσο χαμηλή είναι η αντίσταση; Λίγα kΩ δείχνουν υγρασία ή ρύπανση σε εκτεταμένη επιφάνεια· σχεδόν μηδέν δείχνει σημειακή επαφή αγωγού με μεταλλικό μέρος.</li>
+    </ul>
+      <h2>Η μεθοδική διαδικασία</h2>
+      <ol class="list list--num">
+      <li>Καταγραφή της αρχικής τιμής μόνωσης και της κατάστασης λειτουργίας του πλοίου.</li>
+      <li>Διαχωρισμός δικτύων: αποσύνδεση των μετασχηματιστών φωτισμού και των δευτερευόντων δικτύων ένα προς ένα. Συχνά το σφάλμα εντοπίζεται σε αυτό το βήμα.</li>
+      <li>Διαδοχική απομόνωση αναχωρήσεων στον κύριο πίνακα, με παρακολούθηση της τιμής μόνωσης — ξεκινώντας από τα μη κρίσιμα φορτία και με συνεννόηση για κάθε διακοπή.</li>
+      <li>Όταν εντοπιστεί η αναχώρηση, μέτρηση του κυκλώματος τμηματικά: πίνακας, καλώδιο, φορτίο. Το σφάλμα βρίσκεται πιο συχνά στο τερματικό κουτί ή στο gland παρά στο ίδιο το μηχάνημα.</li>
+      <li>Οπτικός έλεγχος στα ύποπτα σημεία: υγρασία, άλατα, φθορά μανδύα σε διέλευση, χαλαρός ακροδέκτης, συμπύκνωση σε κιβώτιο.</li>
+      <li>Μετά την αποκατάσταση, νέα μέτρηση και καταγραφή — και μέτρηση όλων των υπόλοιπων κυκλωμάτων, γιατί ένα δεύτερο, μικρότερο σφάλμα κρύβεται πίσω από το πρώτο.</li>
+    </ol>
+      <h2>Τα σημεία που ευθύνονται πιο συχνά</h2>
+      <ul class="list">
+      <li>Κινητήρες σε χώρους με υγρασία, ιδίως μετά από παρατεταμένη ακινησία.</li>
+      <li>Θερμαντικά στοιχεία και ιχνηθέτες θέρμανσης σωληνώσεων.</li>
+      <li>Καλώδια καταστρώματος με φθαρμένο μανδύα στα σημεία στήριξης ή διέλευσης.</li>
+      <li>Φωτιστικά σώματα σε εξωτερικούς χώρους και σε χώρους πλύσης.</li>
+      <li>Θερμαντήρες χώρου (space heaters) γεννητριών και κινητήρων — συχνά ξεχνιούνται εντελώς.</li>
+      <li>Παλαιά καλώδια με μόνωση που έχει γίνει υγροσκοπική με τα χρόνια.</li>
+    </ul>
+      <h2>Το κρίσιμο σημείο</h2>
+      <p>Ένα earth fault δεν είναι επείγον με την έννοια της άμεσης διακοπής, αλλά είναι επείγον με την έννοια ότι το πλοίο λειτουργεί χωρίς το περιθώριο ασφαλείας που θεωρεί ότι έχει. Η αναβολή του εντοπισμού επειδή «δεν επηρεάζει τίποτα» είναι η πιο συχνή αιτία για το επόμενο, πολύ πιο ακριβό συμβάν.</p>
+      </article>
+      <aside class="aside">
+        <div class="aside__card aside__card--plain">
+          <h2 class="aside__h">Σχετικές υπηρεσίες</h2>
+          <ul class="aside__list">
+            <li><a href="../ypiresies/troubleshooting-repairs.html">Troubleshooting &amp; Επισκευές Onboard</a></li>
+          </ul>
+        </div>
+        <div class="aside__card">
+          <h2 class="aside__h">Χρειάζεστε τεχνικό onboard;</h2>
+          <p>Στείλτε μας το πρόβλημα, τον τύπο του πλοίου και τον εξοπλισμό. Απαντάμε με συγκεκριμένο πλάνο επέμβασης — όχι με γενικόλογη προσφορά.</p>
+          <a class="btn btn--accent btn--full" href="../epikoinonia.html">Αίτημα προσφοράς</a>
+        </div>
+      </aside>
+    </div></section>
+<section class="section section--alt">
+  <div class="wrap">
+<div class="sec-head ">
+    <h2>Περισσότερα άρθρα</h2>
+    </div>
+    <div class="grid grid--3">
+      <a class="card card--article" href="../arthra/blackout-recovery-pms.html">
+        <span class="card__meta"><time datetime="2026-08-19">2026-08-19</time><span>7 λεπτά ανάγνωσης</span></span>
+        <span class="card__title">Blackout στο μηχανοστάσιο: γιατί το PMS δεν έσωσε το πλοίο</span>
+        <span class="card__text">Ένα blackout σπάνια οφείλεται σε βλάβη. Συνήθως οφείλεται σε τρεις παραμέτρους που κανείς δεν κοίταξε μετά το commissioning.</span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--article" href="../arthra/kw-kvar-load-sharing.html">
+        <span class="card__meta"><time datetime="2026-08-16">2026-08-16</time><span>8 λεπτά ανάγνωσης</span></span>
+        <span class="card__title">kW και kVAr load sharing: γιατί οι γεννήτριες δεν μοιράζονται σωστά</span>
+        <span class="card__text">Το ενεργό και το άεργο φορτίο μοιράζονται από δύο εντελώς διαφορετικά συστήματα. Αν τα μπερδέψεις στη διάγνωση, θα ρυθμίζεις λάθος μηχάνημα.</span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+      <a class="card card--article" href="../arthra/generator-controller-commissioning-mistakes.html">
+        <span class="card__meta"><time datetime="2026-08-12">2026-08-12</time><span>7 λεπτά ανάγνωσης</span></span>
+        <span class="card__title">Επτά λάθη στην παραμετροποίηση generator controller</span>
+        <span class="card__text">Τα περισσότερα δεν φαίνονται ποτέ σε κανονική λειτουργία. Φαίνονται την πρώτη φορά που κάτι πάει στραβά — δηλαδή ακριβώς τότε που δεν πρέπει.</span>
+        <span class="card__go" aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="band band--cta">
+  <div class="wrap band__inner">
+    <div>
+      <h2>Στείλτε μας το πρόβλημα</h2>
+      <p>Περιγράψτε το σύστημα, το πλοίο και το τι παρατηρείτε. Απαντάμε με συγκεκριμένο πλάνο επέμβασης και σαφές εύρος εργασιών.</p>
+    </div>
+    <div class="band__actions">
+      <a class="btn btn--accent btn--lg" href="../epikoinonia.html">Ζητήστε τεχνική προσφορά</a>
+      <a class="btn btn--ghost btn--lg" href="tel:+306989919782">Καλέστε μας +30 698 991 9782</a>
+    </div>
+  </div>
+</section>
+  </main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="../index.html">
+          <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 20c0-4 2.2-6 5-6s5 2 5 6 2.2 6 5 6 5-2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="brand__text">
+            <span class="brand__name">GM <b>Marine Automation</b></span>
+            <span class="brand__tag">&amp; Electrical System</span>
+          </span>
+        </a>
+        <p class="footer__blurb">Marine Power, Automation &amp; Control Solutions</p>
+        <dl class="footer__meta">
+          <dt>Περιοχές εξυπηρέτησης</dt><dd>Ελλάδα &amp; worldwide marine service</dd>
+          <dt>Ωράριο</dt><dd>Δευτέρα – Παρασκευή 08:00 – 18:00<br>Σάββατο: Κατόπιν συνεννόησης</dd>
+        </dl>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Υπηρεσίες</h2>
+        <ul class="footer__list">
+        <li><a href="../ypiresies/marine-automation-control-systems.html">Αυτοματισμός &amp; Έλεγχος</a></li>
+        <li><a href="../ypiresies/deif-power-management.html">Συστήματα DEIF</a></li>
+        <li><a href="../ypiresies/power-management-systems.html">Power Management (PMS)</a></li>
+        <li><a href="../ypiresies/generator-synchronizing-load-sharing.html">Παραλληλισμός &amp; Load Sharing</a></li>
+        <li><a href="../ypiresies/alarm-monitoring-systems.html">Alarm Monitoring (AMS)</a></li>
+        <li><a href="../ypiresies/troubleshooting-repairs.html">Troubleshooting &amp; Επισκευές</a></li>
+        </ul>
+        <p class="footer__more"><a href="../ypiresies.html">Όλες οι υπηρεσίες &rarr;</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Εταιρεία</h2>
+        <ul class="footer__list">
+        <li><a href="../ypiresies.html">Υπηρεσίες</a></li>
+        <li><a href="../erga.html">Έργα</a></li>
+        <li><a href="../arthra.html">Τεχνικά Άρθρα</a></li>
+        <li><a href="../etaireia.html">Η Εταιρεία</a></li>
+        <li><a href="../epikoinonia.html">Επικοινωνία</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__h">Επικοινωνία</h2>
+        <ul class="footer__list footer__list--contact">
+          <li><a href="tel:+306989919782">+30 698 991 9782</a></li>
+          <li><a href="mailto:gianment@hotmail.com">gianment@hotmail.com</a></li>
+          <li><a href="https://wa.me/306989919782" rel="noopener">WhatsApp / Viber</a></li>
+          <li class="footer__addr">Κανάρη 26<br>Μοσχάτο, Ελλάδα</li>
+        </ul>
+        <p class="footer__emergency">24/7 Emergency Technical Support</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&#169; <span data-year>2026</span> GM Marine Automation &amp; Electrical System. Με επιφύλαξη παντός δικαιώματος.</p>
+      <p>Σχεδιασμός &amp; ανάπτυξη: <a href="https://braingroup.tech" rel="noopener">BRAIN GROUP</a></p>
+    </div>
+  </div>
+</footer>
+<a class="fab-whatsapp" href="https://wa.me/306989919782" rel="noopener" aria-label="Επικοινωνία μέσω WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.53.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.02 0 1.19.87 2.34.99 2.5.12.16 1.71 2.61 4.14 3.66.58.251.03.4 1.38.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.12-.22-.19-.47-.31Z"/></svg></a>
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>

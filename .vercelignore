@@ -1,0 +1,8 @@
+.DS_Store
+**/.DS_Store
+
+# The page generator. Its output (the .html files, sitemap.xml, robots.txt) is
+# committed and served directly, so the source must not reach the deployment —
+# with outputDirectory set to ".", anything left here would be publicly served.
+build/
+README.md
