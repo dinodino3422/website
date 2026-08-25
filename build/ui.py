@@ -104,8 +104,24 @@ def icon(name):
 
 
 # --- Hero diagram -----------------------------------------------------------
+def _wave(cx, cy, r):
+    """The sine mark of an AC machine, drawn to a circle of radius `r` centred
+    on (cx, cy). Gen-sets and consumers then carry the same symbol at their own
+    size; the ratios are the ones the gen-sets were originally drawn with."""
+    def n(v):
+        return ("%.4f" % v).rstrip("0").rstrip(".")
+    return "M%s %sc0 %s %s %s %s %sS%s %s %s %ss%s %s %s %sS%s %s %s %s" % (
+        n(cx - 0.681818 * r), n(cy),
+        n(-0.236364 * r), n(0.136364 * r), n(-0.354545 * r),
+        n(0.309091 * r), n(-0.354545 * r),
+        n(cx - 0.063636 * r), n(cy - 0.236364 * r), n(cx - 0.063636 * r), n(cy),
+        n(0.136364 * r), n(0.354545 * r), n(0.309091 * r), n(0.354545 * r),
+        n(cx + 0.554545 * r), n(cy + 0.236364 * r), n(cx + 0.554545 * r), n(cy),
+    )
+
+
 def single_line_diagram():
-    """A simplified marine single-line: two gen-sets onto a main busbar, a tie
+    """A simplified marine single-line: three gen-sets onto a main busbar, a tie
     breaker, the emergency board, and the outgoing feeders.
 
     The elements are grouped into energisation layers (`sld__l--1` … `--5`) so
@@ -115,28 +131,33 @@ def single_line_diagram():
     decorative motion on top of a diagram that is complete and legible without
     it, and it is switched off under prefers-reduced-motion."""
     return """<svg class="sld" viewBox="0 0 460 300" role="img"
-     aria-label="Single-line diagram: two generators paralleled onto a main busbar, tie breaker and emergency switchboard">
+     aria-label="Single-line diagram: three generators paralleled onto a main busbar, tie breaker and emergency switchboard">
   <g class="sld__g" fill="none" stroke="currentColor" stroke-width="1.4"
      stroke-linecap="round" stroke-linejoin="round">
 
     <!-- 1 — generators -->
     <g class="sld__l sld__l--1">
       <circle class="sld__gen" cx="70" cy="46" r="22"/>
-      <path d="M55 46c0-5.2 3-7.8 6.8-7.8S68.6 40.8 68.6 46s3 7.8 6.8 7.8S82.2 51.2 82.2 46"/>
+      <path d="%s"/>
       <text x="70" y="20" class="sld__lbl">DG 1</text>
       <circle class="sld__gen sld__gen--2" cx="200" cy="46" r="22"/>
-      <path d="M185 46c0-5.2 3-7.8 6.8-7.8s6.8 2.6 6.8 7.8 3 7.8 6.8 7.8 6.8-2.6 6.8-7.8"/>
+      <path d="%s"/>
       <text x="200" y="20" class="sld__lbl">DG 2</text>
+      <circle class="sld__gen sld__gen--3" cx="330" cy="46" r="22"/>
+      <path d="%s"/>
+      <text x="330" y="20" class="sld__lbl">DG 3</text>
     </g>
 
     <!-- 2 — feeders down to the incoming breakers -->
     <g class="sld__l sld__l--2">
-      <path d="M70 68v22M200 68v22"/>
+      <path d="M70 68v22M200 68v22M330 68v22"/>
       <rect class="sld__brk" x="61" y="90" width="18" height="18"/>
       <rect class="sld__brk sld__brk--2" x="191" y="90" width="18" height="18"/>
-      <path d="M70 108v24M200 108v24"/>
+      <rect class="sld__brk sld__brk--i3" x="321" y="90" width="18" height="18"/>
+      <path d="M70 108v24M200 108v24M330 108v24"/>
       <path class="sld__flow" d="M70 68v64"/>
       <path class="sld__flow sld__flow--b" d="M200 68v64"/>
+      <path class="sld__flow sld__flow--b3" d="M330 68v64"/>
     </g>
 
     <!-- 3 — main busbar, tie breaker, emergency board -->
@@ -166,21 +187,25 @@ def single_line_diagram():
 
     <!-- 5 — consumers -->
     <g class="sld__l sld__l--5">
-      <circle class="sld__load" cx="80" cy="224" r="12"/><path d="M74 224h12M80 218v12"/>
-      <circle class="sld__load sld__load--2" cx="140" cy="224" r="12"/><path d="M134 224h12M140 218v12"/>
-      <circle class="sld__load sld__load--3" cx="200" cy="224" r="12"/><path d="M194 224h12M200 218v12"/>
-      <circle class="sld__load sld__load--4" cx="260" cy="224" r="12"/><path d="M254 224h12M260 218v12"/>
-      <circle class="sld__load sld__load--5" cx="320" cy="224" r="12"/><path d="M314 224h12M320 218v12"/>
+      <circle class="sld__load" cx="80" cy="224" r="12"/><path d="%s"/>
+      <circle class="sld__load sld__load--2" cx="140" cy="224" r="12"/><path d="%s"/>
+      <circle class="sld__load sld__load--3" cx="200" cy="224" r="12"/><path d="%s"/>
+      <circle class="sld__load sld__load--4" cx="260" cy="224" r="12"/><path d="%s"/>
+      <circle class="sld__load sld__load--5" cx="320" cy="224" r="12"/><path d="%s"/>
       <text x="200" y="258" class="sld__lbl">CONSUMERS</text>
     </g>
 
     <!-- synchronizing annotation -->
     <g class="sld__l sld__l--sync">
-      <path class="sld__sync" d="M92 99h86" stroke-dasharray="4 4"/>
+      <path class="sld__sync" d="M92 99h86M212 99h96" stroke-dasharray="4 4"/>
       <text x="135" y="92" class="sld__lbl sld__lbl--accent">SYNC</text>
     </g>
   </g>
-</svg>"""
+</svg>""" % (
+        _wave(70, 46, 22), _wave(200, 46, 22), _wave(330, 46, 22),
+        _wave(80, 224, 12), _wave(140, 224, 12), _wave(200, 224, 12),
+        _wave(260, 224, 12), _wave(320, 224, 12),
+    )
 
 
 # --- Section helpers --------------------------------------------------------

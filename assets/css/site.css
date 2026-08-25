@@ -1108,6 +1108,7 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
 }
 .sld.is-live .sld__flow { animation: sld-flow 1.9s linear infinite 1.15s, sld-flow-on .5s ease forwards 1.15s; }
 .sld.is-live .sld__flow--b   { animation-delay: 1.3s, 1.3s; }
+.sld.is-live .sld__flow--b3  { animation-delay: 1.4s, 1.4s; }
 .sld.is-live .sld__flow--bus { animation-delay: 1.45s, 1.45s; stroke-dasharray: 4 26; }
 .sld.is-live .sld__flow--c   { animation-delay: 1.6s, 1.6s; }
 
@@ -1119,6 +1120,7 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
 .sld.is-live .sld__brk { animation: sld-close .45s var(--ease) forwards; }
 .sld.is-live .sld__brk        { animation-delay: .55s; }
 .sld.is-live .sld__brk--2     { animation-delay: .68s; }
+.sld.is-live .sld__brk--i3    { animation-delay: .81s; }
 .sld.is-live .sld__brk--tie   { animation-delay: .95s; }
 .sld.is-live .sld__brk--3     { animation-delay: 1.1s; }
 .sld.is-live .sld__brk--4     { animation-delay: 1.2s; }
@@ -1131,6 +1133,7 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
 /* Two machines running independently — the offset delay is the point. */
 .sld.is-live .sld__gen { animation: sld-run 4.4s ease-in-out infinite 1.2s; }
 .sld.is-live .sld__gen--2 { animation-delay: 2.1s; }
+.sld.is-live .sld__gen--3 { animation-delay: 3.2s; }
 @keyframes sld-run {
   0%, 100% { stroke-width: 1.4; opacity: 1; }
   50%      { stroke-width: 2.2; opacity: .85; }
