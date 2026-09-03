@@ -6,9 +6,11 @@ The icons are drawn as schematic symbols rather than generic UI glyphs — a
 generator is the IEC circle-and-sine, a busbar is a busbar. That is the visual
 register the brief asked for, and it is the one this audience reads fluently.
 
-No photographs are invented here. Where the client's real onboard photography
-belongs, `photo_slot()` renders a clearly marked placeholder.
+No photographs are invented here. The client's own onboard photography is
+rendered by `photo()` from the register in photos.py; where a picture is still
+owed, `photo_slot()` renders a clearly marked placeholder.
 """
+import photos
 from shell import esc
 from brand import t
 
@@ -265,6 +267,25 @@ def photo_slot(lang, name, alt, ratio="16 / 9", cls=""):
       </div>
       <figcaption>%s</figcaption>
     </figure>""" % (cls, ratio, esc(t(lang, "img_placeholder")), esc(name), esc(alt)))
+
+
+def photo(lang, p, ratio="4 / 3", cls=""):
+    """One of the client's real photographs, from the register in photos.py.
+
+    The caption doubles as the alt text: it describes what is in the frame, so
+    it reads correctly both under the picture and in place of it. Dimensions
+    come from the register so the image reserves its space before it loads."""
+    cap = p[lang]
+    return ("""<figure class="photo %s" style="--ratio:%s">
+      <img src="%s%s" alt="%s" width="%d" height="%d" loading="lazy" decoding="async">
+      <figcaption>%s</figcaption>
+    </figure>""" % (cls, ratio, photos.DIR, p["file"], esc(cap),
+                    p["w"], p["h"], esc(cap)))
+
+
+def photo_grid(lang, items, ratio="4 / 3", cls="grid grid--3"):
+    return '<div class="%s">\n      %s\n    </div>' % (
+        cls, "\n      ".join(photo(lang, p, ratio) for p in items))
 
 
 def stat_strip(stats):

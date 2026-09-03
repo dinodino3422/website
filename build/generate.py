@@ -19,6 +19,7 @@ import ui
 from articles import ARTICLES
 from brand import NAV, t, url
 from pagecopy import COPY
+from photos import BY_SERVICE, PHOTOS
 from services import FEATURED, SERVICES, BY_SLUG
 from shell import esc, faq_schema
 
@@ -291,6 +292,14 @@ def page_service(lang, s):
     for key, items, kind in blocks:
         article.append('<section class="block">\n      <h2>%s</h2>\n      %s\n    </section>'
                        % (t(lang, key), ui.ul(items)))
+    shots = BY_SERVICE.get(s["slug"])
+    if shots:
+        # Real photographs of this exact work, so the page is not only prose.
+        article.append(
+            '<section class="block">\n      <h2>%s</h2>\n      %s\n    </section>'
+            % (t(lang, "from_field"),
+               ui.photo_grid(lang, shots, "4 / 3",
+                             "grid grid--2" if len(shots) > 1 else "photo-solo")))
     article.append('<section class="block">\n    %s\n    </section>'
                    % ui.faq_block(d["faq"], lang, t(lang, "faq")))
 
@@ -365,23 +374,10 @@ def page_projects(lang):
     photos = ui.section(
         ui.head(None,
                 "Φωτογραφικό υλικό έργων" if lang == "el" else "Project photography",
-                "Οι θέσεις παρακάτω προορίζονται για πραγματικές φωτογραφίες onboard."
+                "Φωτογραφίες από πραγματικές εργασίες onboard και στον πάγκο."
                 if lang == "el" else
-                "The slots below are reserved for the client's real onboard photography.") +
-        '\n    <div class="grid grid--3">\n      ' +
-        "\n      ".join(
-            ui.photo_slot(lang, name, alt_txt, "4 / 3") for name, alt_txt in [
-                ("project-switchboard.jpg",
-                 "Εργασία σε κύριο πίνακα πλοίου" if lang == "el"
-                 else "Work on a vessel's main switchboard"),
-                ("project-generator.jpg",
-                 "Έλεγχος γεννήτριας και συστήματος διέγερσης" if lang == "el"
-                 else "Generator and excitation system inspection"),
-                ("project-controller.jpg",
-                 "Παραμετροποίηση generator controller onboard" if lang == "el"
-                 else "Generator controller configuration onboard"),
-            ]) +
-        "\n    </div>",
+                "Photographs from real work onboard and on the bench.") +
+        "\n    " + ui.photo_grid(lang, PHOTOS),
         cls="section--alt")
 
     item_list = {

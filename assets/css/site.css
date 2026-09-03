@@ -409,6 +409,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: var(--s5) 0; }
 
 /* --- Grids and cards ------------------------------------------------------ */
 .grid { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
@@ -740,6 +741,24 @@ hr { border: 0; border-top: 1px solid var(--line); margin: var(--s5) 0; }
 }
 .photo-slot--wide { max-width: 900px; margin-inline: auto; }
 
+/* --- Photography ---------------------------------------------------------- */
+.photo { margin: 0; background: var(--paper); }
+.photo img {
+  display: block; width: 100%;
+  aspect-ratio: var(--ratio, 4 / 3);
+  object-fit: cover;
+  background: var(--steel-100);
+}
+.photo figcaption {
+  padding: var(--s3);
+  font-size: .85rem; line-height: 1.45; color: var(--steel-600);
+}
+.photo-solo {
+  max-width: 34rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
 /* --- Forms ---------------------------------------------------------------- */
 .form { max-width: 44rem; }
 .form__note {
@@ -923,6 +942,7 @@ input:focus, select:focus, textarea:focus {
 .js .facts > .facts__row,
 .js .callout,
 .js .photo-slot,
+.js .grid > .photo,
 .js .faq > .faq__item,
 .js .band__inner > *,
 .js .aside > .aside__card,
@@ -1274,7 +1294,7 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
 }
 
 @media (max-width: 620px) {
-  .grid--3, .grid--4, .caps { grid-template-columns: minmax(0, 1fr); }
+  .grid--2, .grid--3, .grid--4, .caps { grid-template-columns: minmax(0, 1fr); }
   .steps { grid-template-columns: minmax(0, 1fr); }
   .aside { grid-template-columns: minmax(0, 1fr); }
   .form__row { grid-template-columns: minmax(0, 1fr); gap: 0; }
