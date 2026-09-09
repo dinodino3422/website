@@ -29,8 +29,8 @@ EMAIL = "gianment@hotmail.com"   # → replace with info@gmmarineautomation.gr
 CONTACT_NAME_EL = "Γιάννης Μειντιάι"
 CONTACT_NAME_EN = "Giannis Meintiai"
 
-STREET = "Κανάρη 26"
-STREET_EN = "26 Kanari Street"
+STREET = "Κανάρη 105"
+STREET_EN = "105 Kanari Street"
 CITY_EL = "Μοσχάτο"
 CITY_EN = "Moschato"
 POSTCODE = "[Τ.Κ.]"              # LAUNCH TODO — confirm postal code
@@ -38,6 +38,11 @@ REGION_EL = "Αττική"
 REGION_EN = "Attica"
 COUNTRY = "GR"
 LAT_LON = None                   # add once the Google Business pin is confirmed
+
+# Google Maps — query built from the street address above (no API key needed)
+MAP_QUERY = "%s, %s, Greece" % (STREET_EN, CITY_EN)
+MAP_EMBED = "https://www.google.com/maps?q=%s&output=embed" % MAP_QUERY.replace(" ", "+").replace(",", "%2C")
+MAP_LINK = "https://www.google.com/maps/search/?api=1&query=%s" % MAP_QUERY.replace(" ", "+").replace(",", "%2C")
 
 TIKTOK = "https://www.tiktok.com/@gmmarineautomation"   # confirm handle
 
@@ -125,6 +130,8 @@ UI = {
         "footer_by": "Σχεδιασμός &amp; ανάπτυξη",
         "img_placeholder": "ΕΝΔΕΙΚΤΙΚΗ ΕΙΚΟΝΑ — ΠΡΟΣ ΑΝΤΙΚΑΤΑΣΤΑΣΗ",
         "from_field": "Από το πεδίο",
+        "map_h": "Πού θα μας βρείτε",
+        "map_directions": "Οδηγίες στους χάρτες Google",
         "on_this_page": "Σε αυτή τη σελίδα",
         "services_col": "Υπηρεσίες",
         "company_col": "Εταιρεία",
@@ -168,6 +175,8 @@ UI = {
         "footer_by": "Design &amp; development",
         "img_placeholder": "PLACEHOLDER IMAGE — TO BE REPLACED",
         "from_field": "From the field",
+        "map_h": "Where to find us",
+        "map_directions": "Directions on Google Maps",
         "on_this_page": "On this page",
         "services_col": "Services",
         "company_col": "Company",

@@ -55,6 +55,7 @@ def organization_schema(lang):
             "addressRegion": B.REGION_EL if lang == "el" else B.REGION_EN,
             "addressCountry": B.COUNTRY,
         },
+        "hasMap": B.MAP_LINK,
         "areaServed": [
             {"@type": "Country", "name": "Greece"},
             {"@type": "Place", "name": "Piraeus"},

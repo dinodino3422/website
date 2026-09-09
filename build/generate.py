@@ -736,11 +736,20 @@ def page_contact(lang):
           <h2>{what_h}</h2>
           {what}
         </section>
+        <section class="block">
+          <h2>{map_h}</h2>
+          <div class="map">
+            <iframe src="{map_src}" title="{map_h}" width="640" height="360" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+          <p class="map__link"><a class="link" href="{map_link}" target="_blank" rel="noopener">{map_dir}</a></p>
+        </section>
       </div>
       {aside}
     </div>""".format(form_h=esc(c["contact_form_h2"]), form_p=esc(c["contact_form_p"]),
                      form=form, what_h=esc(c["contact_what_h2"]),
-                     what=ui.ul(c["contact_what"]), aside=aside)
+                     what=ui.ul(c["contact_what"]), aside=aside,
+                     map_h=esc(t(lang, "map_h")), map_src=esc(B.MAP_EMBED),
+                     map_link=esc(B.MAP_LINK), map_dir=esc(t(lang, "map_directions")))
 
     contact_schema = {
         "@context": "https://schema.org", "@type": "ContactPage",

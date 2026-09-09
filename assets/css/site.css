@@ -759,6 +759,11 @@ hr { border: 0; border-top: 1px solid var(--line); margin: var(--s5) 0; }
   border: 1px solid var(--line);
 }
 
+/* --- Map --- */
+.map { border: 1px solid var(--line); background: var(--steel-100); }
+.map iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; }
+.map__link { margin: var(--s3) 0 0; font-size: .9rem; }
+
 /* --- Forms ---------------------------------------------------------------- */
 .form { max-width: 44rem; }
 .form__note {
