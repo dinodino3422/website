@@ -63,7 +63,7 @@
     ".sec-head", ".sec-more", ".split__r",
     ".grid > .card", ".grid > .feature", ".grid > .tile", ".caps > a",
     ".steps > .step", ".projects > .project", ".facts > .facts__row",
-    ".callout", ".photo-slot", ".faq > .faq__item", ".band__inner > *",
+    ".callout", ".photo-slot", ".grid > .photo", ".faq > .faq__item", ".band__inner > *",
     ".aside > .aside__card", ".prose > h2", ".prose > .pull",
     ".form > .field", ".form > .form__row", ".form > .field--radios",
     ".contact-list > li"
